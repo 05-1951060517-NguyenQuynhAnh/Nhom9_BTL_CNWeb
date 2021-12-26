@@ -8,9 +8,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="css/css.css">
     <title>Meetup - We are what we do</title>
     <link rel="shortcut icon" href="img/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
 </head>
 
 <body>
@@ -50,7 +57,7 @@
             </div>
         </nav>
         <main class="pt-5 px-5">
-     <!-- Phần Intro ------------------------------------------------------------------------------------------>
+            <!-- Phần Intro ------------------------------------------------------------------------------------------>
             <div class="row pt-5">
                 <div class="col-md-6 ">
                     <h1 class="my_intro mr-3">Celebrating 20 years of real connections on Meetup</h1>
@@ -64,12 +71,12 @@
                     <img src="img/online_events.svg" alt="" class="img-fluid rounded">
                 </div>
             </div>
-     <!--  ----------------------------------------------------------------------------------------------------->
+            <!--  ----------------------------------------------------------------------------------------------------->
             <div class="row mt-5 ">
                 <div class="col-md">
                     <figure class="figure">
-                        <img src="img/1.jpg" class="figure-img img-fluid mb-1" style="border-radius:8px; height: 211px;width: 362px;"
-                            alt="...">
+                        <img src="img/1.jpg" class="figure-img img-fluid mb-1"
+                            style="border-radius:8px; height: 211px;width: 362px;" alt="...">
                         <figcaption class="figure-caption">
                             <a href="figure-cation" class="fw-bold">Make new friends
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
@@ -83,7 +90,8 @@
                 </div>
                 <div class="col-md">
                     <figure class="figure">
-                        <img src="img/category2.webp" class="figure-img img-fluid mb-1" style="border-radius:8px;" alt="...">
+                        <img src="img/category2.webp" class="figure-img img-fluid mb-1" style="border-radius:8px;"
+                            alt="...">
                         <figcaption class="figure-caption">
                             <a href="figure-cation" class="fw-bold"> Explore the outdoors<svg
                                     xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
@@ -96,7 +104,8 @@
                 </div>
                 <div class="col-md">
                     <figure class="figure">
-                        <img src="img/category3.webp" class="figure-img img-fluid mb-1" style="border-radius:8px;" alt="...">
+                        <img src="img/category3.webp" class="figure-img img-fluid mb-1" style="border-radius:8px;"
+                            alt="...">
                         <figcaption class="figure-caption">
                             <a href="figure-cation" class="fw-bold"> Connect over tech <svg
                                     xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
@@ -108,9 +117,9 @@
                     </figure>
                 </div>
             </div>
-     <!--  --------------------------------------------------------------------------------------------------->
+            <!--  --------------------------------------------------------------------------------------------------->
             <div class="scroll_container mt-4">
-                <button class="item all">Boost your career</button>
+                <button class="item">Boost your career</button>
                 <button class="item">Find your zen</button>
                 <button class="item">Get moving</button>
                 <button class="item">Share language + oulture</button>
@@ -118,7 +127,7 @@
                 <button class="item">Write together</button>
                 <button class="item">Home your craft</button>
             </div>
-     <!-- Phần tìm kiếm ---------------------------------------------------------------------------------------->
+            <!-- Phần tìm kiếm ---------------------------------------------------------------------------------------->
             <div class="row mt-5 px-1">
                 <div class="col-md-6">
                     <div class="row pe-4">
@@ -159,7 +168,7 @@
                     </div>
                 </div>
             </div>
-     <!-- Phần Meetup works ------------------------------------------------------------------------------------------------------>
+            <!-- Phần Meetup works ------------------------------------------------------------------------------------------------------>
             <div class="ivents mt-5 pt-4">
                 <div class="main_featured row text-center">
                     <h3 class="text-center fw-bold ">How Meetup works</h3>
@@ -194,7 +203,7 @@
             <div class="join text-center mt-5 pt-3 mb-5">
                 <a href="#"><button>Join Meetup</button></a>
             </div>
-     <!-- Phần Popular groups ------------------------------------------------------------------------------------------------------------------>
+            <!-- Phần Popular groups ------------------------------------------------------------------------------------------------------------------>
             <div class="groups" style="margin-bottom:150px;">
                 <div class="d-flex mb-4">
                     <div class="col-md-10">
@@ -206,76 +215,158 @@
                         <a href="" class="d-inline" style="color: #008294;">Explore more groups</a>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col p-0 border me-3">
-                        <div class="group_card " style="padding: 12px;">
-                            <a href="" class="text-decoration-none">
-                                <div class="d-flex items-center border-bottom pb-3">
-                                    <div class=" me-3">
-                                        <img src="img/70x70.jpg" alt=""
-                                            style="height:55px ;width:55px; border-radius:7px">
-                                    </div>
-                                    <h5 class="mt-3 fw-bold link-dark">
-                                        Online Improv
-                                    </h5>
-                                </div>
-                            </a>
-                            <a href="" class="text-decoration-none">
-                                <div class="mt-3">
-                                    <p class="mb-2">SAT, DEC 25 @ 8:00 PM 2021</p>
-                                    <h6 class="fw-bold link-dark">English communication</h6>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col p-0 border me-3">
-                        <div class="group_card " style="padding: 12px;">
-                            <a href="" class="text-decoration-none">
-                                <div class="d-flex items-center border-bottom pb-3">
-                                    <div class=" me-3">
-                                        <img src="img/70x70 (1).jpg" alt=""
-                                            style="height:55px ;width:55px; border-radius:7px">
-                                    </div>
-                                    <h5 class="mt-2 mb-0 fw-bold link-dark">
-                                        Leap - Conversations for Curious Minds
-                                    </h5>
-                                </div>
-                            </a>
-                            <a href="" class="text-decoration-none">
-                                <div class="mt-3">
-                                    <p class="mb-2">SAT, DEC 25 @ 8:00 PM 2021</p>
-                                    <h6 class="fw-bold link-dark">Pistachio! - A chat to consider one of life's
-                                        challenges together</h6>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col p-0 border me-3">
-                        <div class="group_card " style="padding: 12px;">
-                            <a href="" class="text-decoration-none">
-                                <div class="d-flex items-center border-bottom pb-3">
-                                    <div class=" me-3">
-                                        <img src="img/70x70 (2).jpg" alt=""
-                                            style="height:55px ;width:55px; border-radius:7px">
-                                    </div>
-                                    <h5 class="mt-2 mb-0 fw-bold link-dark">
-                                        New York History and Culture - Experience NY...
-                                    </h5>
-                                </div>
-                            </a>
-                            <a href="" class="text-decoration-none">
-                                <div class="mt-3">
-                                    <p class="mb-2">SAT, DEC 25 @ 8:00 PM 2021</p>
-                                    <h6 class="fw-bold link-dark">Donna Summer: The Queen of Disco Music History
-                                        Livestream</h6>
+                <div class="container p-0">
 
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="col p-0 border me-3">
+                                <div class="group_card " style="padding: 12px;">
+                                    <a href="" class="text-decoration-none">
+                                        <div class="d-flex items-center border-bottom pb-3">
+                                            <div class=" me-3">
+                                                <img src="img/70x70.jpg" alt=""
+                                                    style="height:55px ;width:55px; border-radius:7px">
+                                            </div>
+                                            <h5 class="mt-3 fw-bold link-dark">
+                                                Online Improv
+                                            </h5>
+                                        </div>
+                                    </a>
+                                    <a href="" class="text-decoration-none">
+                                        <div class="mt-3">
+                                            <p class="mb-2">SAT, DEC 25 @ 8:00 PM 2021</p>
+                                            <h6 class="fw-bold link-dark">English communication</h6>
+                                        </div>
+                                    </a>
                                 </div>
-                            </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col p-0 border me-3">
+                                <div class="group_card " style="padding: 12px;">
+                                    <a href="" class="text-decoration-none">
+                                        <div class="d-flex items-center border-bottom pb-3">
+                                            <div class=" me-3">
+                                                <img src="img/70x70 (1).jpg" alt=""
+                                                    style="height:55px ;width:55px; border-radius:7px">
+                                            </div>
+                                            <h5 class="mt-2 mb-0 fw-bold link-dark">
+                                                Leap - Conversations for Curious Minds
+                                            </h5>
+                                        </div>
+                                    </a>
+                                    <a href="" class="text-decoration-none">
+                                        <div class="mt-3">
+                                            <p class="mb-2">SAT, DEC 25 @ 8:00 PM 2021 ICT</p>
+                                            <h6 class="fw-bold link-dark">Pistachio! - A chat to consider one of life's
+                                                challenges together</h6>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col p-0 border me-3">
+                                <div class="group_card " style="padding: 12px;">
+                                    <a href="" class="text-decoration-none">
+                                        <div class="d-flex items-center border-bottom pb-3">
+                                            <div class=" me-3">
+                                                <img src="img/70x70 (2).jpg" alt=""
+                                                    style="height:55px ;width:55px; border-radius:7px">
+                                            </div>
+                                            <h5 class="mt-2 mb-0 fw-bold link-dark">
+                                                New York History and Culture - Experience NY...
+                                            </h5>
+                                        </div>
+                                    </a>
+                                    <a href="" class="text-decoration-none">
+                                        <div class="mt-3">
+                                            <p class="mb-2">SAT, DEC 25 @ 8:00 PM 2021 ICT</p>
+                                            <h6 class="fw-bold link-dark">Donna Summer: The Queen of Disco Music History
+                                                Livestream</h6>
+
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col p-0 border me-3">
+                                <div class="group_card " style="padding: 12px;">
+                                    <a href="" class="text-decoration-none">
+                                        <div class="d-flex items-center border-bottom pb-3">
+                                            <div class=" me-3">
+                                                <img src="img/70x70 (3).jpg" alt=""
+                                                    style="height:55px ;width:55px; border-radius:7px">
+                                            </div>
+                                            <h5 class="mt-2 mb-0 fw-bold link-dark">
+                                            International Friend Connection East Coast
+                                            </h5>
+                                        </div>
+                                    </a>
+                                    <a href="" class="text-decoration-none">
+                                        <div class="mt-3">
+                                            <p class="mb-2">MON, DEC 27 @ 7:00 AM ICT</p>
+                                            <h6 class="fw-bold link-dark">Hang Out On Zoom</h6>
+
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col p-0 border me-3">
+                                <div class="group_card " style="padding: 12px;">
+                                    <a href="" class="text-decoration-none">
+                                        <div class="d-flex items-center border-bottom pb-3">
+                                            <div class=" me-3">
+                                                <img src="img/70x70 (4).jpg" alt=""
+                                                    style="height:55px ;width:55px; border-radius:7px">
+                                            </div>
+                                            <h5 class="mt-2 mb-0 fw-bold link-dark">
+                                            Singles Speed Dating
+                                            </h5>
+                                        </div>
+                                    </a>
+                                    <a href="" class="text-decoration-none">
+                                        <div class="mt-3">
+                                            <p class="mb-2">SUN, DEC 26 @ 11:00 PM ICT</p>
+                                            <h6 class="fw-bold link-dark">Asian Date Night (Global) | Video Speed Dating</h6>
+
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col p-0 border me-3">
+                                <div class="group_card " style="padding: 12px;">
+                                    <a href="" class="text-decoration-none">
+                                        <div class="d-flex items-center border-bottom pb-3">
+                                            <div class=" me-3">
+                                                <img src="img/70x70 (5).jpg" alt=""
+                                                    style="height:55px ;width:55px; border-radius:7px">
+                                            </div>
+                                            <h5 class="mt-2 mb-0 fw-bold link-dark">
+                                            Zoom meeting and coffee with other citizens of the...
+                                            </h5>
+                                        </div>
+                                    </a>
+                                    <a href="" class="text-decoration-none">
+                                        <div class="mt-3">
+                                            <p class="mb-2">MON, DEC 27 @ 12:00 AM ICT</p>
+                                            <h6 class="fw-bold link-dark">Zoom meeting and coffee with other citizens of the world </h6>
+
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
-     <!-- Phần app store ------------------------------------------------------------------------------------------------------------>
+            <!-- Phần app store ------------------------------------------------------------------------------------------------------------>
             <div class="row" style="margin-bottom: 200px;">
                 <div class="col p-0">
                     <img src="img/ScreenIos.webp" alt="" style="height: 368px; width: 248px;">
@@ -295,7 +386,7 @@
                     <img src="img/ScreenAndroid.webp" alt="" style="height: 368px; width: 248px;">
                 </div>
             </div>
-     <!-- Phần Stories ------------------------------------------------------------------------------------------------------------------->
+            <!-- Phần Stories ------------------------------------------------------------------------------------------------------------------->
             <div class="stories pb-5">
                 <p class="text-center fw-bold mb-0 text">Stories from Meetup</p>
                 <p class="text-center mt-1 title">People on Meetup have fostered community, learned new skills, started
@@ -344,7 +435,7 @@
                 </div>
             </div>
         </main>
-     <!-- Phần footer --------------------------------------------------------------------------------------------------------------->
+        <!-- Phần footer --------------------------------------------------------------------------------------------------------------->
         <footer class="pb-5 mt-5">
             <div class="f-top">
                 <p><a href="" class="text-decoration-none link-light fw-bold">Create your own Meetup group.</a></p>
@@ -426,6 +517,35 @@
                 </div>
         </footer>
     </div>
+    <!--Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"></script>
+    <!-- Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- custom JS code after importing jquery and owl -->
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $(".owl-carousel").owlCarousel();
+    });
+
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 3
+            }
+        }
+    })
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>

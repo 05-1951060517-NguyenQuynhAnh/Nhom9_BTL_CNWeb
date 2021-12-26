@@ -10,7 +10,7 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/css.css">
     <title>Meetup - We are what we do</title>
-    <link rel="shortcut icon" href="img/icon.png">
+    <link rel="shortcut icon" href="img/Meetup.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
         integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
         crossorigin="anonymous" />
@@ -119,13 +119,13 @@
             </div>
             <!--  --------------------------------------------------------------------------------------------------->
             <div class="scroll_container mt-4">
-                <button class="item">Boost your career</button>
-                <button class="item">Find your zen</button>
-                <button class="item">Get moving</button>
-                <button class="item">Share language + oulture</button>
-                <button class="item">Read with friends</button>
-                <button class="item">Write together</button>
-                <button class="item">Home your craft</button>
+                <button class="items">Boost your career</button>
+                <button class="items">Find your zen</button>
+                <button class="items">Get moving</button>
+                <button class="items">Share language + oulture</button>
+                <button class="items">Read with friends</button>
+                <button class="items">Write together</button>
+                <button class="items">Home your craft</button>
             </div>
             <!-- Phần tìm kiếm ---------------------------------------------------------------------------------------->
             <div class="row mt-5 px-1">
@@ -156,13 +156,13 @@
                     <div class="row">
                         <h3 class="fw-bold">See what’s happening</h3>
                         <div class="scroll_container mt-2" style="white-space:normal">
-                            <button class="item mb-2 me-1">Starting soon</button>
-                            <button class="item me-1">Today</button>
-                            <button class="item me-1">Tomorrow</button>
-                            <button class="item me-1">This week</button>
-                            <button class="item me-1">Online</button>
-                            <button class="item me-1">In person</button>
-                            <button class="item me-1">Trending near you</button>
+                            <button class="items mb-2 me-1">Starting soon</button>
+                            <button class="items me-1">Today</button>
+                            <button class="items me-1">Tomorrow</button>
+                            <button class="items me-1">This week</button>
+                            <button class="items me-1">Online</button>
+                            <button class="items me-1">In person</button>
+                            <button class="items me-1">Trending near you</button>
                         </div>
 
                     </div>
@@ -217,7 +217,7 @@
                 </div>
                 <div class="container p-0">
 
-                    <div class="owl-carousel owl-theme">
+                    <div class="owl-carousel">
                         <div class="item">
                             <div class="col p-0 border me-3">
                                 <div class="group_card " style="padding: 12px;">

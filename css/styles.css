@@ -1,209 +1,101 @@
-/* .col-md-12 {
-    padding: 0;
-    
-}
-.about_text-content {
-    text-align: justify;
-}
-.filter-options{
-    flex: 0 0 auto;
-    padding: 10px 10px;
-    border-radius: 40px;
-    background: rgb(54, 135, 189);
-    border: solid rgb(54, 135, 189);
-    text-transform: capitalize;
-    margin-right:30px;
-    font-size: 15px;
-    cursor: pointer;
-    color: #fff;
-    fill:#fff;
-
-} */
-/* .search1{
-    flex: 0 0 auto;
-    margin-top: 20px;
-    background-color:rgb(207, 74, 97);
-    border: solid rgb(207, 74, 97);
-    width: 100%;
-    height:40px;
-    color: #fff;
-    box-sizing: border-box;
-   
-} */
-/* .join-meetup{
-    width: 150px;
-    height: 35px;
-    margin-left: 50%;
-    margin-top: 50px;
-    background-color: rgb(43, 105, 219);
-    border: solid rgb(43, 105, 219);
-    border-radius: 5px;
-    color: cornsilk;
-    box-sizing: border-box; */ 
 .html,body{
-        margin: 0;
-        padding: 0;
-        background-color: #f6f7f8; 
-
-        height: 100vh;/*body chiếm độ cao toàn bộ cửa sổ trình duyệt*/
-}
-    /*CSS for header*/
-    /*CSS flexbox,CSS Grid*/
-#header{
-    display: flex;
-    align-items: center;/*căn chỉnh các phần tử nằm giữa theo phương đứng*/
-    height: 70px;
-    padding: 10px;/*khoảng cách giữa các vùng lề vs nội dung*/
-    background-color: white;
-    box-sizing: border-box;
-    position: fixed;
-    width: 100%;
-    }
-    
-.h-left{
-    align-items: center;
- }
- 
-.h-left span{
-    cursor: pointer;
-    padding: 0 5px;
-}
-    
- .h-search{
-    display: flex;
-    align-items: center;
-    
-    }
-.h-search form{
-    height: 35px;
     margin: 0;
     padding: 0;
-     display: flex;
-    margin-right: 10px;
-    width: 50%;
+    background-color: #f6f7f8; 
+
+    height: 100vh;/*body chiếm độ cao toàn bộ cửa sổ trình duyệt*/
 }
-    
-.h-search input{
-     border: 1px solid rgb(12, 12, 11);
-    width: 500px;
-    padding: 10px;
-    margin: 0;
-    border-radius: 2px;
-} 
-    
-.h-search button{
-    padding: 0px;
-    margin: 0px;
-    height: 100%;
-    border: none;
-    border-radius: 0;
-    width: 80px;
-    cursor: pointer;
-    }
- .h-right{
-    align-items: center;
-    color: #fff;
-    cursor: pointer;
-    }
-    
-.h-right button{
-       
-    align-items: center;
-    font-size: 0.75rem;
-    font-weight: bold;
-    color:#000;
-    }
 .card-title a{
-    color: black;
-    text-decoration: none;
+color: black;
+text-decoration: none;
 }
 .header{
-    background-color: #f6f7f8; 
-    padding: 30px 0;
+background-color: #f6f7f8; 
+padding: 30px 0;
 }
 .card__container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 1300px;
-    margin: 0 auto;
-    border-radius: 4px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 1300px;
+margin: 0 auto;
+border-radius: 4px;
 }
 .card-item{
-    width: 580px;
-    padding:24px 32px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    display: flex;
-    height: 220px;
+width: 580px;
+padding:24px 32px;
+background-color: #ffffff;
+border-radius: 8px;
+display: flex;
+height: 220px;
 }
 .card-img{
-    width: 80px;
-    height: 80px;
+width: 80px;
+height: 80px;
 }
 .card-content{
-    display: flex;
-    flex-direction: column;
-    padding-left: 56px;
-    margin-left: 5px;
+display: flex;
+flex-direction: column;
+padding-left: 56px;
+margin-left: 5px;
 }
 .card-title:hover{
-    text-decoration: 2px underline;
+text-decoration: 2px underline;
 
 }
 .card-content-title{
-    font-size: 20px;
-    margin-bottom: 12px;
+font-size: 20px;
+margin-bottom: 12px;
 }
 .btn-card{
-    font-size: 20px;
-    display: inline-block;
-    text-decoration: none;
-    border: 2px solid #008294;
-    padding: 12px;
-    color: #008294;
-    border-radius: 8px;
-    font-weight: bold;
-    max-width: 180px;
+font-size: 20px;
+display: inline-block;
+text-decoration: none;
+border: 2px solid #008294;
+padding: 12px;
+color: #008294;
+border-radius: 8px;
+font-weight: bold;
+max-width: 180px;
 }
 .card-content-text{
-    font-size: 16px;
-    margin-bottom:24px;
-    color: #030303;
+font-size: 16px;
+margin-bottom:24px;
+color: #030303;
 }
 .btn-card:hover{
-    background-color: #0098ae;
-    color: #fff;
+background-color: #0098ae;
+color: #fff;
 }
 /*Search and check out*/
 card__container row{
-    background-color: #ffffff;
+background-color: #ffffff;
 }
 .btnsearch{
-    flex: 0 0 auto;
-    margin-top: 20px;
-    background-color:#f77070;
-    border: solid #f77070;
-    width: 100%;
-    height:40px;
-    color: #fff;
-    box-sizing: border-box;
-    border-radius: 5px;
-   
+flex: 0 0 auto;
+margin-top: 20px;
+background-color:#f77070;
+border: solid #f77070;
+width: 100%;
+height:40px;
+color: #fff;
+box-sizing: border-box;
+border-radius: 5px;
+
 } 
 .filter-options{
-    flex: 0 0 auto;
-    padding: 10px 15px; 
-    border-radius: 40px;
-    background: rgb(54, 135, 189);
-    border: solid rgb(54, 135, 189);
-    text-transform: capitalize;
-    margin-right:30px;
-    font-size: 15px;
-    cursor: pointer;
-    color: #fff;
-    fill:#fff;
+flex: 0 0 auto;
+padding: 10px 15px; 
+border-radius: 40px;
+background: rgb(54, 135, 189);
+border: solid rgb(54, 135, 189);
+text-transform: capitalize;
+margin-right:30px;
+font-size: 15px;
+cursor: pointer;
+color: #fff;
+fill:#fff;
 } 
 .find_checkout{
-    background-color: #fff;
+background-color: #fff;
 }

@@ -34,7 +34,6 @@
                                             <path
                                                 d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
                                         </svg>
-
                                 </div>
                             </div>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -54,13 +53,10 @@
                                             English</a>
                                     </li>
                                     <li class="nav-item">
-                                        <!-- Button trigger modal -->
                                         <button type="button" class="btn btn-link text-dark text-decoration-none"
                                             data-bs-toggle="modal" data-bs-target="#exampleModal">
                                             Log in
                                         </button>
-
-                                        <!-- Modal -->
                                         <div class="modal fade" id="exampleModal" tabindex="-1"
                                             aria-labelledby="exampleModalLabel" aria-hidden="true">
                                             <div class="modal-dialog">
@@ -88,7 +84,6 @@
                                                                                         class="text-decoration-none"
                                                                                         href="signup.php">Sign up</a>
                                                                                 </div>
-
                                                                                 <label for="inputEmail"
                                                                                     class="sr-only">Email
                                                                                 </label>
@@ -145,11 +140,9 @@
                                                                             </form>
                                                                         </div>
                                                                     </div>
-
                                                                 </div>
                                                             </div>
                                                         </div>
-
                                                     </div>
                                                 </div>
                                             </div>

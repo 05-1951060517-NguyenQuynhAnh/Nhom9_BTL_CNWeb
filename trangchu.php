@@ -204,15 +204,15 @@
                 <a href="#"><button>Join Meetup</button></a>
             </div>
             <!-- Upcoming online events --------------------------------------------------------------------------------------------------------------->
-            <div class="groups" style="margin-bottom:150px;">
+            <div class="groups" >
                 <div class="d-flex mb-4">
                     <div class="col-md-10">
 
-                        <h3 class="d-inline fw-bold">Popular Groups</h3>
+                        <h3 class="d-inline fw-bold">Upcoming online events</h3>
                     </div>
                     <div class="col-md" style="padding-left:35px ">
 
-                        <a href="" class="d-inline" style="color: #008294;">Explore more groups</a>
+                        <a href="" class="d-inline" style="color: #008294;">Explore more events</a>
                     </div>
                 </div>
                 <div class="container p-0">
@@ -223,155 +223,351 @@
                                 <a href="#" class="text-decoration-none">
                                     <div class="card-body">
                                         <img src="img/398x224.webp" style="border-radius: 10px;" alt="">
-                                        <h6 class="fw-bold" style="font-size: 13.5px;color: #877457;">MON, JAN 3 @ 7:00
-                                            AM ICT</h5>
-                                            <h6 class="link-dark" style="font-size: 17px;">New York & New Jersey Virtual
-                                                Dating</h6>
-                                            <p class="text-muted" style="font-size: 13.5px;">New York Matchmaking Dating
-                                            </p>
-                                            <div class="avatar">
-                                                <img class="avatar_3 d-inline" src="img/30x30 (2).webp"
-                                                    style="border-radius: 20px; border: 2px solid white; height:30px; width:30px"
-                                                    alt="">
-                                                <img class="avatar_2 d-inline" src="img/30x30 (1).webp"
-                                                    style="border-radius: 20px; border: 2px solid white;height:30px; width:30px"
-                                                    alt="">
-                                                <img class="avatar_1 d-inline " src="img/30x30.webp"
-                                                    style="border-radius: 20px; border: 2px solid white;height:30px; width:30px"
-                                                    alt="">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-box-arrow-up" viewBox="0 0 16 16">
-                                                    <path fill-rule="evenodd"
-                                                        d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1h-2z" />
-                                                    <path fill-rule="evenodd"
-                                                        d="M7.646.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 1.707V10.5a.5.5 0 0 1-1 0V1.707L5.354 3.854a.5.5 0 1 1-.708-.708l3-3z" />
-                                                </svg>
-                                            </div>
+                                        <div class="px-3">
+
+                                            <h6 class="mt-3" style="font-size: 14px;color: #877457;">MON, JAN 3 @ 7:00
+                                                AM ICT</h5>
+                                                <h6 class=" fw-bold link-dark" style="font-size: 17px;">New York & New
+                                                    Jersey Virtual
+                                                    Dating</h6>
+                                                <p class="text-muted mt-3 mb-5" style="font-size: 13.5px;">New York
+                                                    Matchmaking Dating
+                                                </p>
+                                                <div class="avatar">
+                                                    <div class="row ">
+                                                        <div class="col">
+                                                            
+                                                        <img class="avatar_3 d-inline" src="img/30x30 (2).webp"
+                                                            style="border-radius: 20px; border: 2px solid white; height:30px; width:30px"
+                                                            alt="">
+                                                        <img class="avatar_2 d-inline" src="img/30x30 (1).webp"
+                                                            style="border-radius: 20px; border: 2px solid white;height:30px; width:30px"
+                                                            alt="">
+                                                        <img class="avatar_1 d-inline " src="img/30x30.webp"
+                                                            style="border-radius: 20px; border: 2px solid white;height:30px; width:30px"
+                                                            alt="">
+                                                            <p class="text-muted pt-1 "
+                                                            style="font-size:15px; margin-left:60px;">210</p>
+                                                        </div>
+                                                        <div class="col">
+                                                   
+                                                        </div>
+                                                        <div class="col">
+                                                        <svg style="margin-left:50px;color:#b3b3b3;"
+                                                            xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            fill="currentColor" class="bi bi-box-arrow-up"
+                                                            viewBox="0 0 16 16">
+                                                            <path fill-rule="evenodd"
+                                                                d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1h-2z" />
+                                                            <path fill-rule="evenodd"
+                                                                d="M7.646.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 1.707V10.5a.5.5 0 0 1-1 0V1.707L5.354 3.854a.5.5 0 1 1-.708-.708l3-3z" />
+                                                        </svg>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                        </div>
                                     </div>
                                 </a>
                             </div>
                         </div>
                         <div class="item">
-                            <div class="col p-0 border me-3">
-                                <div class="group_card " style="padding: 12px;">
-                                    <a href="" class="text-decoration-none">
-                                        <div class="d-flex items-center border-bottom pb-3">
-                                            <div class=" me-3">
-                                                <img src="img/70x70 (1).jpg" alt=""
-                                                    style="height:55px ;width:55px; border-radius:7px">
-                                            </div>
-                                            <h5 class="mt-2 mb-0 fw-bold link-dark">
-                                                Leap - Conversations for Curious Minds
-                                            </h5>
+                        <div class="col">
+                                <a href="#" class="text-decoration-none">
+                                    <div class="card-body">
+                                        <img src="img/event1.webp" style="border-radius: 10px;" alt="">
+                                        <div class="px-3">
+
+                                            <h6 class="mt-3" style="font-size: 14px;color: #877457;">MON, JAN 3 @ 7:00
+                                                AM ICT</h5>
+                                                <h6 class=" fw-bold link-dark" style="font-size: 17px;">New York & New
+                                                    Jersey Virtual
+                                                    Dating</h6>
+                                                <p class="text-muted mt-3 mb-5" style="font-size: 13.5px;">New York
+                                                    Matchmaking Dating
+                                                </p>
+                                                <div class="avatar">
+                                                    <div class="row ">
+                                                        <div class="col">
+                                                            
+                                                        <img class="avatar_3 d-inline" src="img/av2.webp"
+                                                            style="border-radius: 20px; border: 2px solid white; height:30px; width:30px"
+                                                            alt="">
+                                                        <img class="avatar_2 d-inline" src="img/av1.webp"
+                                                            style="border-radius: 20px; border: 2px solid white;height:30px; width:30px"
+                                                            alt="">
+                                                        <img class="avatar_1 d-inline " src="img/30x30.webp"
+                                                            style="border-radius: 20px; border: 2px solid white;height:30px; width:30px"
+                                                            alt="">
+                                                            <p class="text-muted pt-1 "
+                                                            style="font-size:15px; margin-left:60px;">71</p>
+                                                        </div>
+                                                        <div class="col">
+                                                   
+                                                        </div>
+                                                        <div class="col">
+                                                        <svg style="margin-left:50px;color:#b3b3b3;"
+                                                            xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            fill="currentColor" class="bi bi-box-arrow-up"
+                                                            viewBox="0 0 16 16">
+                                                            <path fill-rule="evenodd"
+                                                                d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1h-2z" />
+                                                            <path fill-rule="evenodd"
+                                                                d="M7.646.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 1.707V10.5a.5.5 0 0 1-1 0V1.707L5.354 3.854a.5.5 0 1 1-.708-.708l3-3z" />
+                                                        </svg>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
                                         </div>
-                                    </a>
-                                    <a href="" class="text-decoration-none">
-                                        <div class="mt-3">
-                                            <p class="mb-2">SAT, DEC 25 @ 8:00 PM 2021 ICT</p>
-                                            <h6 class="fw-bold link-dark">Pistachio! - A chat to consider one of life's
-                                                challenges together</h6>
-                                        </div>
-                                    </a>
-                                </div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div class="item">
-                            <div class="col p-0 border me-3">
-                                <div class="group_card " style="padding: 12px;">
-                                    <a href="" class="text-decoration-none">
-                                        <div class="d-flex items-center border-bottom pb-3">
-                                            <div class=" me-3">
-                                                <img src="img/70x70 (2).jpg" alt=""
-                                                    style="height:55px ;width:55px; border-radius:7px">
-                                            </div>
-                                            <h5 class="mt-2 mb-0 fw-bold link-dark">
-                                                New York History and Culture - Experience NY...
-                                            </h5>
-                                        </div>
-                                    </a>
-                                    <a href="" class="text-decoration-none">
-                                        <div class="mt-3">
-                                            <p class="mb-2">SAT, DEC 25 @ 8:00 PM 2021 ICT</p>
-                                            <h6 class="fw-bold link-dark">Donna Summer: The Queen of Disco Music History
-                                                Livestream</h6>
+                        <div class="col">
+                                <a href="#" class="text-decoration-none">
+                                    <div class="card-body">
+                                        <img src="img/event2.webp" style="border-radius: 10px;" alt="">
+                                        <div class="px-3">
 
+                                            <h6 class="mt-3" style="font-size: 14px;color: #877457;">SAT, JAN 1 @ 7:00 AM ICT</h5>
+                                                <h6 class=" fw-bold link-dark" style="font-size: 17px;">OASIS CHRISTIAN SINGLES NEW YEARS EVE ZOOM CELEBRATION</h6>
+                                                <p class="text-muted mt-3 mb-4" style="font-size: 13.5px;">OASIS Tri-State Christian Singles Events
+                                                </p>
+                                                <div class="avatar">
+                                                    <div class="row ">
+                                                        <div class="col">
+                                                            
+                                                        <img class="avatar_3 d-inline" src="img/av4.webp"
+                                                            style="border-radius: 20px; border: 2px solid white; height:30px; width:30px"
+                                                            alt="">
+                                                        <img class="avatar_2 d-inline" src="img/av3.webp"
+                                                            style="border-radius: 20px; border: 2px solid white;height:30px; width:30px"
+                                                            alt="">
+                                                        <img class="avatar_1 d-inline " src="img/av1.webp"
+                                                            style="border-radius: 20px; border: 2px solid white;height:30px; width:30px"
+                                                            alt="">
+                                                            <p class="text-muted pt-1 "
+                                                            style="font-size:15px; margin-left:60px;">56</p>
+                                                        </div>
+                                                        <div class="col">
+                                                   
+                                                        </div>
+                                                        <div class="col">
+                                                        <svg style="margin-left:50px;color:#b3b3b3;"
+                                                            xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            fill="currentColor" class="bi bi-box-arrow-up"
+                                                            viewBox="0 0 16 16">
+                                                            <path fill-rule="evenodd"
+                                                                d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1h-2z" />
+                                                            <path fill-rule="evenodd"
+                                                                d="M7.646.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 1.707V10.5a.5.5 0 0 1-1 0V1.707L5.354 3.854a.5.5 0 1 1-.708-.708l3-3z" />
+                                                        </svg>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
                                         </div>
-                                    </a>
-                                </div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div class="item">
-                            <div class="col p-0 border me-3">
-                                <div class="group_card " style="padding: 12px;">
-                                    <a href="" class="text-decoration-none">
-                                        <div class="d-flex items-center border-bottom pb-3">
-                                            <div class=" me-3">
-                                                <img src="img/70x70 (3).jpg" alt=""
-                                                    style="height:55px ;width:55px; border-radius:7px">
-                                            </div>
-                                            <h5 class="mt-2 mb-0 fw-bold link-dark">
-                                                International Friend Connection East Coast
-                                            </h5>
-                                        </div>
-                                    </a>
-                                    <a href="" class="text-decoration-none">
-                                        <div class="mt-3">
-                                            <p class="mb-2">MON, DEC 27 @ 7:00 AM ICT</p>
-                                            <h6 class="fw-bold link-dark">Hang Out On Zoom</h6>
+                        <div class="col">
+                                <a href="#" class="text-decoration-none">
+                                    <div class="card-body">
+                                        <img src="img/event3.webp" style="border-radius: 10px;" alt="">
+                                        <div class="px-3">
 
+                                            <h6 class="mt-3" style="font-size: 14px;color: #877457;">FRI, JAN 14 @ 7:00 AM ICT</h5>
+                                                <h6 class=" fw-bold link-dark" style="font-size: 17px;">First Ever NYC Young Professionals Book Club Meeting </h6>
+                                                <p class="text-muted mt-3 mb-4" style="font-size: 13.5px;">NYC Young Professionals Book Club
+                                                </p>
+                                                <div class="avatar">
+                                                    <div class="row ">
+                                                        <div class="col">
+                                                            
+                                                        <img class="avatar_3 d-inline" src="img/30x30 (2).webp"
+                                                            style="border-radius: 20px; border: 2px solid white; height:30px; width:30px"
+                                                            alt="">
+                                                        <img class="avatar_2 d-inline" src="img/av6.webp"
+                                                            style="border-radius: 20px; border: 2px solid white;height:30px; width:30px"
+                                                            alt="">
+                                                        <img class="avatar_1 d-inline " src="img/av5.webp"
+                                                            style="border-radius: 20px; border: 2px solid white;height:30px; width:30px"
+                                                            alt="">
+                                                            <p class="text-muted pt-1 "
+                                                            style="font-size:15px; margin-left:60px;">40</p>
+                                                        </div>
+                                                        <div class="col">
+                                                   
+                                                        </div>
+                                                        <div class="col">
+                                                        <svg style="margin-left:50px;color:#b3b3b3;"
+                                                            xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            fill="currentColor" class="bi bi-box-arrow-up"
+                                                            viewBox="0 0 16 16">
+                                                            <path fill-rule="evenodd"
+                                                                d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1h-2z" />
+                                                            <path fill-rule="evenodd"
+                                                                d="M7.646.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 1.707V10.5a.5.5 0 0 1-1 0V1.707L5.354 3.854a.5.5 0 1 1-.708-.708l3-3z" />
+                                                        </svg>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
                                         </div>
-                                    </a>
-                                </div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div class="item">
-                            <div class="col p-0 border me-3">
-                                <div class="group_card " style="padding: 12px;">
-                                    <a href="" class="text-decoration-none">
-                                        <div class="d-flex items-center border-bottom pb-3">
-                                            <div class=" me-3">
-                                                <img src="img/70x70 (4).jpg" alt=""
-                                                    style="height:55px ;width:55px; border-radius:7px">
-                                            </div>
-                                            <h5 class="mt-2 mb-0 fw-bold link-dark">
-                                                Singles Speed Dating
-                                            </h5>
-                                        </div>
-                                    </a>
-                                    <a href="" class="text-decoration-none">
-                                        <div class="mt-3">
-                                            <p class="mb-2">SUN, DEC 26 @ 11:00 PM ICT</p>
-                                            <h6 class="fw-bold link-dark">Asian Date Night (Global) | Video Speed Dating
-                                            </h6>
+                        <div class="col">
+                                <a href="#" class="text-decoration-none">
+                                    <div class="card-body">
+                                        <img src="img/event4.webp" style="border-radius: 10px;" alt="">
+                                        <div class="px-3">
 
+                                            <h6 class="mt-3" style="font-size: 14px;color: #877457;">SUN, JAN 2 @ 11:00 PM ICT</h5>
+                                                <h6 class=" fw-bold link-dark" style="font-size: 17px;">Van Gogh Museum - Amsterdam: Livestream Art Tour</h6>
+                                                <p class="text-muted mt-3 mb-4" style="font-size: 13.5px;">New York History and Culture - Experience NY ...
+                                                </p>
+                                                <div class="avatar">
+                                                    <div class="row ">
+                                                        <div class="col">
+                                                            
+                                                        <img class="avatar_3 d-inline" src="img/av9.webp"
+                                                            style="border-radius: 20px; border: 2px solid white; height:30px; width:30px"
+                                                            alt="">
+                                                        <img class="avatar_2 d-inline" src="img/av8.webp"
+                                                            style="border-radius: 20px; border: 2px solid white;height:30px; width:30px"
+                                                            alt="">
+                                                        <img class="avatar_1 d-inline " src="img/av7.webp"
+                                                            style="border-radius: 20px; border: 2px solid white;height:30px; width:30px"
+                                                            alt="">
+                                                            <p class="text-muted pt-1 "
+                                                            style="font-size:15px; margin-left:60px;">306</p>
+                                                        </div>
+                                                        <div class="col">
+                                                   
+                                                        </div>
+                                                        <div class="col">
+                                                        <svg style="margin-left:50px;color:#b3b3b3;"
+                                                            xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            fill="currentColor" class="bi bi-box-arrow-up"
+                                                            viewBox="0 0 16 16">
+                                                            <path fill-rule="evenodd"
+                                                                d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1h-2z" />
+                                                            <path fill-rule="evenodd"
+                                                                d="M7.646.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 1.707V10.5a.5.5 0 0 1-1 0V1.707L5.354 3.854a.5.5 0 1 1-.708-.708l3-3z" />
+                                                        </svg>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
                                         </div>
-                                    </a>
-                                </div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div class="item">
-                            <div class="col p-0 border me-3">
-                                <div class="group_card " style="padding: 12px;">
-                                    <a href="" class="text-decoration-none">
-                                        <div class="d-flex items-center border-bottom pb-3">
-                                            <div class=" me-3">
-                                                <img src="img/70x70 (5).jpg" alt=""
-                                                    style="height:55px ;width:55px; border-radius:7px">
-                                            </div>
-                                            <h5 class="mt-2 mb-0 fw-bold link-dark">
-                                                Zoom meeting and coffee with other citizens of the...
-                                            </h5>
-                                        </div>
-                                    </a>
-                                    <a href="" class="text-decoration-none">
-                                        <div class="mt-3">
-                                            <p class="mb-2">MON, DEC 27 @ 12:00 AM ICT</p>
-                                            <h6 class="fw-bold link-dark">Zoom meeting and coffee with other citizens of
-                                                the world </h6>
+                            <div class="col">
+                                <a href="#" class="text-decoration-none">
+                                    <div class="card-body">
+                                        <img src="img/event5.webp" style="border-radius: 10px;" alt="">
+                                        <div class="px-3">
 
+                                            <h6 class="mt-3" style="font-size: 14px;color: #877457;">SAT, JAN 8 @ 11:00 PM ICT</h5>
+                                                <h6 class=" fw-bold link-dark" style="font-size: 17px;">Online Spanish-English Language Exchange - New Year's Resolution!</h6>
+                                                <p class="text-muted mt-3 mb-4" style="font-size: 13.5px;">Spanglish Languages and Culture New York
+                                                </p>
+                                                <div class="avatar">
+                                                    <div class="row ">
+                                                        <div class="col">
+                                                            
+                                                        <img class="avatar_3 d-inline" src="img/av11.webp"
+                                                            style="border-radius: 20px; border: 2px solid white; height:30px; width:30px"
+                                                            alt="">
+                                                        <img class="avatar_2 d-inline" src="img/av1.webp"
+                                                            style="border-radius: 20px; border: 2px solid white;height:30px; width:30px"
+                                                            alt="">
+                                                        <img class="avatar_1 d-inline " src="img/av10.webp"
+                                                            style="border-radius: 20px; border: 2px solid white;height:30px; width:30px"
+                                                            alt="">
+                                                            <p class="text-muted pt-1 "
+                                                            style="font-size:15px; margin-left:60px;">26</p>
+                                                        </div>
+                                                        <div class="col">
+                                                   
+                                                        </div>
+                                                        <div class="col">
+                                                        <svg style="margin-left:50px;color:#b3b3b3;"
+                                                            xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            fill="currentColor" class="bi bi-box-arrow-up"
+                                                            viewBox="0 0 16 16">
+                                                            <path fill-rule="evenodd"
+                                                                d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1h-2z" />
+                                                            <path fill-rule="evenodd"
+                                                                d="M7.646.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 1.707V10.5a.5.5 0 0 1-1 0V1.707L5.354 3.854a.5.5 0 1 1-.708-.708l3-3z" />
+                                                        </svg>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
                                         </div>
-                                    </a>
-                                </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col">
+                                <a href="#" class="text-decoration-none">
+                                    <div class="card-body">
+                                        <img src="img/event6.webp" style="border-radius: 10px;" alt="">
+                                        <div class="px-3">
+
+                                            <h6 class="mt-3" style="font-size: 14px;color: #877457;">WED, JAN 12 @ 6:30 AM ICT</h5>
+                                                <h6 class=" fw-bold link-dark" style="font-size: 17px;">Web3 Blockchain Game Development with Unity3D and ChainSafe
+                                                    </h6>
+                                                <p class="text-muted mt-3 mb-4" style="font-size: 13.5px;">Big Apple DeFi
+                                                </p>
+                                                <div class="avatar">
+                                                    <div class="row ">
+                                                        <div class="col">
+                                                            
+                                                        <img class="avatar_3 d-inline" src="img/av1.webp"
+                                                            style="border-radius: 20px; border: 2px solid white; height:30px; width:30px"
+                                                            alt="">
+                                                        <img class="avatar_2 d-inline" src="img/av1.webp"
+                                                            style="border-radius: 20px; border: 2px solid white;height:30px; width:30px"
+                                                            alt="">
+                                                        <img class="avatar_1 d-inline " src="img/av12.webp"
+                                                            style="border-radius: 20px; border: 2px solid white;height:30px; width:30px"
+                                                            alt="">
+                                                            <p class="text-muted pt-1 "
+                                                            style="font-size:15px; margin-left:60px;">33</p>
+                                                        </div>
+                                                        <div class="col">
+                                                   
+                                                        </div>
+                                                        <div class="col">
+                                                        <svg style="margin-left:50px;color:#b3b3b3;"
+                                                            xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            fill="currentColor" class="bi bi-box-arrow-up"
+                                                            viewBox="0 0 16 16">
+                                                            <path fill-rule="evenodd"
+                                                                d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1h-2z" />
+                                                            <path fill-rule="evenodd"
+                                                                d="M7.646.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 1.707V10.5a.5.5 0 0 1-1 0V1.707L5.354 3.854a.5.5 0 1 1-.708-.708l3-3z" />
+                                                        </svg>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -379,7 +575,7 @@
 
             </div>
             <!-- Phần Popular groups ------------------------------------------------------------------------------------------------------------------>
-            <div class="groups" style="margin-bottom:150px;">
+            <div class="groups" style="margin-bottom:150px; height:300px">
                 <div class="d-flex mb-4">
                     <div class="col-md-10">
 

@@ -49,107 +49,19 @@
                                         <a class="nav-link" href="#">Start a new group</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" aria-current="page" href=""><i class="bi bi-globe2"></i>
-                                            English</a>
+                                        <?php
+                                            include("template/languege.php")
+                                        ?>
                                     </li>
                                     <li class="nav-item">
-                                        <button type="button" class="btn btn-link text-dark text-decoration-none"
-                                            data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                            Log in
-                                        </button>
-                                        <div class="modal fade" id="exampleModal" tabindex="-1"
-                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                            <div class="modal-dialog">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                            aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <div class="container">
-                                                            <div class="row">
-                                                                <div class="col-md ">
-                                                                    <div id="first">
-                                                                        <div class="myform form">
-                                                                            <form class="form-signin" width="100">
-                                                                                <div class="text-center">
-                                                                                    <img class="mb-4"
-                                                                                        src="images/logo2.png" alt=""
-                                                                                        width="52" height="52">
-                                                                                    <h1
-                                                                                        class="h3 mb-3 mt-0 font-weight-normal">
-                                                                                        Log in
-                                                                                    </h1>
-                                                                                    <a>Not a member yet?</a> <a
-                                                                                        class="text-decoration-none"
-                                                                                        href="signup.php">Sign up</a>
-                                                                                </div>
-                                                                                <label for="inputEmail"
-                                                                                    class="sr-only">Email
-                                                                                </label>
-                                                                                <input type="email" id="inputEmail"
-                                                                                    class="form-control" required
-                                                                                    autofocus>
-                                                                                <label for="inputPassword"
-                                                                                    class="sr-only">Password</label>
-                                                                                <input type="password"
-                                                                                    id="inputPassword"
-                                                                                    class="form-control" required>
-                                                                                <div class="checkbox mb-3">
-                                                                                    <label>
-                                                                                        <input type="checkbox"
-                                                                                            value="remember-me">
-                                                                                        Keep me signed in
-                                                                                    </label>
-                                                                                </div>
-                                                                                <button
-                                                                                    class="col-md-12 btn btn-lg btn-danger btn-block"
-                                                                                    type="submit">Log in</button>
-                                                                                <hr class="mt-5">
-                                                                                <div class=" justify-content">
-                                                                                    <div class="col-sm mt-5"><button
-                                                                                            type="button"
-                                                                                            class="col-md-12 btn btn-icon btn-outline-dark text-left"><span><img
-                                                                                                    src="https://i.imgur.com/URmkevm.png"
-                                                                                                    class="img-fluid mr-1"
-                                                                                                    width="25"></span>
-                                                                                            Login with Facebook</button>
-                                                                                    </div>
-                                                                                    <div class="col-sm mt-3"><button
-                                                                                            type="button"
-                                                                                            class="col-md-12 btn btn-icon btn-outline-dark text-left "><span><img
-                                                                                                    src="https://img.icons8.com/color/48/000000/google-logo.png"
-                                                                                                    class="img-fluid mr-1"
-                                                                                                    width="25"></span>
-                                                                                            Log in with Google</button>
-                                                                                    </div>
-                                                                                    <div class="col-sm mt-3">
-                                                                                        <button type="button"
-                                                                                            class="col-md-12 btn btn-icon btn-outline-dark text-left "><span><img
-                                                                                                    src="https://avatars.githubusercontent.com/u/10639145?s=280&v=4"
-                                                                                                    class="img-fluid mr-1"
-                                                                                                    width="25"></span>
-                                                                                            Log in with Apple</button>
-                                                                                    </div>
-                                                                                    <div class="text-center mt-3">
-                                                                                        <a class="text-decoration-none"
-                                                                                            href="">Issues with log
-                                                                                            in?</a>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </form>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <?php
+                                            include("template/login.php")
+                                        ?>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="signup.php">Sign up</a>
+                                        <?php
+                                            include("template/signup.php")
+                                        ?>
                                     </li>
                                 </ul>
                             </div>
@@ -416,38 +328,38 @@
             <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                 <p class="lead mt-3">Friends event near NewYork, NY</p>
                 <div class="btn-group">
-                        <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Any distance
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Any distance</a></li>
-                            <li><a class="dropdown-item" href="#">2 miles</a></li>
-                            <li><a class="dropdown-item" href="#">5 miles</a></li>
-                            <li><a class="dropdown-item" href="#">10 miles</a></li>
-                            <li><a class="dropdown-item" href="#">25 miles</a></li>
-                            <li><a class="dropdown-item" href="#">50 miles</a></li>
-                            <li><a class="dropdown-item" href="#">100 miles</a></li>
-                        </ul>
-                    </div>
+                    <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Any distance
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Any distance</a></li>
+                        <li><a class="dropdown-item" href="#">2 miles</a></li>
+                        <li><a class="dropdown-item" href="#">5 miles</a></li>
+                        <li><a class="dropdown-item" href="#">10 miles</a></li>
+                        <li><a class="dropdown-item" href="#">25 miles</a></li>
+                        <li><a class="dropdown-item" href="#">50 miles</a></li>
+                        <li><a class="dropdown-item" href="#">100 miles</a></li>
+                    </ul>
+                </div>
 
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Any category
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Any category</a></li>
-                            <li><a class="dropdown-item" href="#">Art & Culture</a></li>
-                            <li><a class="dropdown-item" href="#">Career & Business</a></li>
-                            <li><a class="dropdown-item" href="#">Community & Evironment</a></li>
-                            <li><a class="dropdown-item" href="#">Dancing</a></li>
-                            <li><a class="dropdown-item" href="#">Games</a></li>
-                            <li><a class="dropdown-item" href="#">Health & Wellbeing</a></li>
-                            <li><a class="dropdown-item" href="#">Hobbies & Passions</a></li>
-                            <li><a class="dropdown-item" href="#">Identity & Language</a></li>
-                        </ul>
-                    </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Any category
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Any category</a></li>
+                        <li><a class="dropdown-item" href="#">Art & Culture</a></li>
+                        <li><a class="dropdown-item" href="#">Career & Business</a></li>
+                        <li><a class="dropdown-item" href="#">Community & Evironment</a></li>
+                        <li><a class="dropdown-item" href="#">Dancing</a></li>
+                        <li><a class="dropdown-item" href="#">Games</a></li>
+                        <li><a class="dropdown-item" href="#">Health & Wellbeing</a></li>
+                        <li><a class="dropdown-item" href="#">Hobbies & Passions</a></li>
+                        <li><a class="dropdown-item" href="#">Identity & Language</a></li>
+                    </ul>
+                </div>
                 <hr>
                 <div class="row col-md-12">
                     <div class="col-md-2">
@@ -492,7 +404,8 @@
                     <div class="col-md-5 ms-3">
                         <div>Friends of Pauley</div>
                         <div>WOODBURY, NY</div>
-                        <div class="mt-3">This is a a group where are going to be doing diffrent activitis on Long Island. Some of these will be bowling, game nights,...</div>
+                        <div class="mt-3">This is a a group where are going to be doing diffrent activitis on Long
+                            Island. Some of these will be bowling, game nights,...</div>
                         <div class="mt-3">87 members · Public <i class="bi bi-question-circle-fill"></i></div>
                         <div class="d-flex justify-content-end">
                             <i class="bi bi-box-arrow-up"></i>
@@ -509,7 +422,8 @@
                     <div class="col-md-5 ms-3">
                         <div>Outdoor Friends Group</div>
                         <div>JERICHO, NY</div>
-                        <div class="mt-3">This group is of people looking to meet others outdoors during this challenging time. Outdoors will include and talk, gather...</div>
+                        <div class="mt-3">This group is of people looking to meet others outdoors during this
+                            challenging time. Outdoors will include and talk, gather...</div>
                         <div class="mt-3">425 members · Public <i class="bi bi-question-circle-fill"></i></div>
                         <div class="d-flex justify-content-end">
                             <i class="bi bi-box-arrow-up"></i>
@@ -526,7 +440,8 @@
                     <div class="col-md-5 ms-3">
                         <div>Resistance Meals w/Friends</div>
                         <div>OLD BETHPAGE, NY</div>
-                        <div class="mt-3">If you have to ask what the resistances is or you have to Google it, this is not the group for you. This group if for those who are... </div>
+                        <div class="mt-3">If you have to ask what the resistances is or you have to Google it, this is
+                            not the group for you. This group if for those who are... </div>
                         <div class="mt-3">40 members · Public <i class="bi bi-question-circle-fill"></i></div>
                         <div class="d-flex justify-content-end">
                             <i class="bi bi-box-arrow-up"></i>
@@ -543,7 +458,8 @@
                     <div class="col-md-5 ms-3">
                         <div>Friends Forever Bus Tour Club</div>
                         <div>SMITHTOWN, NY</div>
-                        <div class="mt-3">Welcome to the Friend's Forever Bus Tour Club. We offer One day Bus Tours and Multi Day Bus Tours for Individuals and Groups...</div>
+                        <div class="mt-3">Welcome to the Friend's Forever Bus Tour Club. We offer One day Bus Tours and
+                            Multi Day Bus Tours for Individuals and Groups...</div>
                         <div class="mt-3">2429 members · Public <i class="bi bi-question-circle-fill"></i></div>
                         <div class="d-flex justify-content-end">
                             <i class="bi bi-box-arrow-up"></i>
@@ -681,11 +597,8 @@
                     <a href="" class="link-light text-decoration-none me-3">Privacy Policy</a></li>
                     <a href="" class="link-light text-decoration-none me-3">Cookie Policy</a></li>
                     <a href="" class="link-light text-decoration-none me-3">Help</a></li>
-
-
                 </div>
             </div>
-
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">

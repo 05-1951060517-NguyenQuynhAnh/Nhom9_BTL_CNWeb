@@ -14,7 +14,7 @@
 
 <body>
     <!--Header-->
-<header class="container-fluid position-fixed">
+<header class="container-fluid ">
         <div class="row ">
             <div class="col-md-12">
                 <nav class="navbar navbar-expand-lg navbar-light">
@@ -89,10 +89,10 @@
         </div>
 </header> 
         <!--Main-->
-<hr class="mt-0 bg">
-    <main class="container mt-5">
+<hr class="mt-0 ">
+    <main class="container mt-3">
         <nav >
-            <div class="nav nav-tabs " id="nav-tab" role="tablist">
+            <div class="nav nav-tabs mx-5" id="nav-tab" role="tablist">
                 <button class="nav-link active mt-5" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
                     type="button" role="tab" aria-controls="nav-home" aria-selected="true">Events</button>
                 <button class="nav-link mt-5" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
@@ -100,69 +100,80 @@
             </div>
         </nav>
         <!--Event-->
-        <div class="tab-content" id="nav-tabContent">
+        <div class="tab-content mx-5" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                 <p class="lead mt-3">Suggested Events near New York, NY</p>
-                <div class="row col-md">
-                    <div class="col">
-                        <div class="md-form mb-0">
-                            <select class="form-select">
-                                <option>Any day</option>
-                                <option>Starting soon</option>
-                                <option>Today</option>
-                                <option>Tomorrow</option>
-                                <option>This week</option>
-                                <option>This weekend</option>
-                                <option>Next week</option>
-                                <option>Custom</option>
-                            </select>
-                        </div>
+                <div class="container">
+                <div class="btn-group">
+                        <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Any day
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Any day</a></li>
+                            <li><a class="dropdown-item" href="#">Starting soon</a></li>
+                            <li><a class="dropdown-item" href="#">Today</a></li>
+                            <li><a class="dropdown-item" href="#">Tomorrow</a></li>
+                            <li><a class="dropdown-item" href="#">This week</a></li>
+                            <li><a class="dropdown-item" href="#">This weekend</a></li>
+                            <li><a class="dropdown-item" href="#">Next week</a></li>
+                            <li><a class="dropdown-item" href="#">Custom</a></li>
+                        </ul>
                     </div>
-                    <div class="col">
-                        <div class="md-form mb-0">
-                            <select class="form-select">
-                                <option>Any type</option>
-                                <option>Online</option>
-                                <option>In person</option>
-                            </select>
-                        </div>
+
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Any type
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Any type</a></li>
+                            <li><a class="dropdown-item" href="#">Online</a></li>
+                            <li><a class="dropdown-item" href="#">In person</a></li>
+                        </ul>
                     </div>
-                    <div class="col">
-                        <div class="md-form mb-0 rounded-pill bg-white">
-                            <select class="form-select ">
-                                <option>Any distance</option>
-                                <option>2 miles</option>
-                                <option>5 miles</option>
-                                <option>10 miles</option>
-                                <option>25 miles</option>
-                                <option>50 miles</option>
-                                <option>100 miles</option>
-                            </select>
-                        </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Any distance
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Any distance</a></li>
+                            <li><a class="dropdown-item" href="#">2 miles</a></li>
+                            <li><a class="dropdown-item" href="#">5 miles</a></li>
+                            <li><a class="dropdown-item" href="#">10 miles</a></li>
+                            <li><a class="dropdown-item" href="#">25 miles</a></li>
+                            <li><a class="dropdown-item" href="#">50 miles</a></li>
+                            <li><a class="dropdown-item" href="#">100 miles</a></li>
+                        </ul>
                     </div>
-                    <div class="col">
-                        <div class="md-form mb-0">
-                            <select class="form-select">
-                                <option>Any category</option>
-                                <option>Art & Culture</option>
-                                <option>Career & Business</option>
-                                <option>Community & Evironment</option>
-                                <option>Dancing</option>
-                                <option>Games</option>
-                                <option>Health & Wellbeing</option>
-                                <option>Hobbies & Passions</option>
-                                <option>Identity & Language</option>
-                            </select>
-                        </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Any category
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Any category</a></li>
+                            <li><a class="dropdown-item" href="#">Art & Culture</a></li>
+                            <li><a class="dropdown-item" href="#">Career & Business</a></li>
+                            <li><a class="dropdown-item" href="#">Community & Evironment</a></li>
+                            <li><a class="dropdown-item" href="#">Dancing</a></li>
+                            <li><a class="dropdown-item" href="#">Games</a></li>
+                            <li><a class="dropdown-item" href="#">Health & Wellbeing</a></li>
+                            <li><a class="dropdown-item" href="#">Hobbies & Passions</a></li>
+                            <li><a class="dropdown-item" href="#">Identity & Language</a></li>
+                        </ul>
                     </div>
-                    <div class="col">
-                        <div class="md-form mb-0 bg-primary">
-                            <select class="form-select bg-primary text-white">
-                                <option>Sort by: Relevance</option>
-                                <option>Date</option>
-                                <option>Relevance</option>
-                            </select>
-                        </div>
+                    <div class="btn-group  bg-primary">
+                        <button type="button" class="btn btn-light dropdown-toggle bg-primary" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Sort by: Relevance
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Sort by: Relevance</a></li>
+                            <li><a class="dropdown-item" href="#">Date</a></li>
+                            <li><a class="dropdown-item" href="#">Relevance</a></li>
+                        </ul>
                     </div>
                 </div>
                 <hr>
@@ -170,7 +181,7 @@
                     <div class="col-md-2">
                         <img src="img/1event.webp" width="200" height="100" alt="">
                     </div>
-                    <div class="col-md-9">
+                    <div class="col-md-9 ms-3">
                         <div>FRI, JAN @ 6:30 AM 2022</div>
                         <h5>In-Person Speed Friending</h5>
                         <div>The New York Social Group (20,000+ members!)• New York, NY </div>
@@ -189,7 +200,7 @@
                     <div class="col-md-2">
                         <img src="img/2event.webp" width="200" height="100" alt="">
                     </div>
-                    <div class="col-md-9">
+                    <div class="col-md-9 ms-3">
                         <div>THU, JAN 13 @ 7:00 AM ICT</div>
                         <h5>Drinks @ Pet Shop</h5>
                         <div>Jersey City Connects • Jersey City, NJ</div>
@@ -208,9 +219,9 @@
                     <div class="col-md-2">
                         <img src="img/3event.webp" width="200" height="100" alt="">
                     </div>
-                    <div class="col-md-9">
+                    <div class="col-md-9 ms-3">
                         <div>SAT, JAN 1@ 10:30 PM ICT</div>
-                        <h5>[22 spots] JJ Walker(Session 2)-Sarturday 10:30am-Recurring</h5>
+                        <h5>[22 spots] JJ Walker(Session 2)</h5>
                         <div>Downtown NYC Pickup Soccer-SoccerHeights NYC• New York, NY  </div>
                         <div>2 attendees</div>
                         <div class="col-md-6 d-flex justify-content-end">
@@ -228,9 +239,9 @@
                     <div class="col-md-2">
                         <img src="img/4event.webp" width="200" height="100" alt="">
                     </div>
-                    <div class="col-md-9">
+                    <div class="col-md-9 ms-3">
                         <div>SAT, DEC 25 @ 9:00 AM ICT</div>
-                        <h5>Fun & Games Night: Virtual Scavenger Hunt & Trivia(Friday/Saturday)</h5>
+                        <h5>Fun & Games Night: Virtual Scavenger Hunt & Trivia</h5>
                         <div>FREE or inexpensive things to do in New York City • New York, NY</div>
                         <div>1 attendees</div>
                         <div class="col-md-6 d-flex justify-content-end">
@@ -246,7 +257,7 @@
                     <div class="col-md-2">
                         <img src="img/5event.webp" width="200" height="100" alt="">
                     </div>
-                    <div class="col-md-9">
+                    <div class="col-md-9 ms-3">
                         <div>SAT, DEC 25 @ 9:00 AM ICT</div>
                         <h5>Yoga for Respiratory Health - Free online Webinar</h5>
                         <div>Inner Engineering New York (Isha Yoga & Meditation Classes) • New</div>
@@ -261,42 +272,45 @@
             <!--Groups-->
             <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                 <p class="lead mt-3">Suggested Events near New York, NY</p>
-                <div class="row col-md">
-                    <div class="col-2">
-                        <div class="md-form mb-0">
-                            <select class="form-select">
-                                <option>Any distance</option>
-                                <option>2 miles</option>
-                                <option>5 miles</option>
-                                <option>10 miles</option>
-                                <option>25 miles</option>
-                                <option>50 miles</option>
-                                <option>100 miles</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="md-form mb-0">
-                            <select class="form-select">
-                                <option>Any category</option>
-                                <option>Art & Culture</option>
-                                <option>Career & Business</option>
-                                <option>Community & Evironment</option>
-                                <option>Dancing</option>
-                                <option>Games</option>
-                                <option>Health & Wellbeing</option>
-                                <option>Hobbies & Passions</option>
-                                <option>Identity & Language</option>
-                            </select>
-                        </div>
-                    </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Any distance
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Any distance</a></li>
+                        <li><a class="dropdown-item" href="#">2 miles</a></li>
+                        <li><a class="dropdown-item" href="#">5 miles</a></li>
+                        <li><a class="dropdown-item" href="#">10 miles</a></li>
+                        <li><a class="dropdown-item" href="#">25 miles</a></li>
+                        <li><a class="dropdown-item" href="#">50 miles</a></li>
+                        <li><a class="dropdown-item" href="#">100 miles</a></li>
+                    </ul>
                 </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Any category
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Any category</a></li>
+                        <li><a class="dropdown-item" href="#">Art & Culture</a></li>
+                        <li><a class="dropdown-item" href="#">Career & Business</a></li>
+                        <li><a class="dropdown-item" href="#">Community & Evironment</a></li>
+                        <li><a class="dropdown-item" href="#">Dancing</a></li>
+                        <li><a class="dropdown-item" href="#">Games</a></li>
+                        <li><a class="dropdown-item" href="#">Health & Wellbeing</a></li>
+                        <li><a class="dropdown-item" href="#">Hobbies & Passions</a></li>
+                        <li><a class="dropdown-item" href="#">Identity & Language</a></li>
+                    </ul>
+                </div>
+               
                 <hr>
                 <div class="row col-md-12">
                     <div class="col-md-2">
                         <img src="img/groups1.jpg" width="200" height="120" alt="">
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-5 ms-3">
                         <h5>Domestic Abuse Survivors: New Friends & Support Group</h5>
                          <div>NEW YORK, NY</div>
                         <div class="mt-3">This is a group for individuals who have been victims of domestic violence.
@@ -314,7 +328,7 @@
                     <div class="col-md-2">
                         <img src="img/groups2.jpg" width="200" height="120" alt="">
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-5 ms-3">
                         <h5>Self-Improvement and Confidence Meetup Group</h5>
                         <div>NEW YORK, NY</div>
                         <div class="mt-3">Everyone welcome! Others probably consider you to be very capable, and you are. 
@@ -334,7 +348,7 @@
                     <div class="col-md-2">
                         <img src="img/groups3.jpg" width="200" height="120" alt="">
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-5 ms-3">
                         <h5>The Trail Blazers</h5>
                         <div>NEW YORK, NY</div>
                         <div class="mt-3">Please read before you are planning to join the group!
@@ -353,7 +367,7 @@
                     <div class="col-md-2">
                         <img src="img/groups4.jpg" width="200" height="120" alt="">
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-5 ms-3">
                         <h5>Freestyle Soccer</h5>
                         <div>BROOKLYN, NY</div>
                         <div class="mt-3">People who love soccer. Upper intermediate and advanced levels only. 
@@ -371,11 +385,11 @@
                     <div class="col-md-2">
                         <img src="img/groups5.jpg" width="200" height="120" alt="">
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-5 ms-3">
                         <h5>Black Wall Street Business Network</h5>
                         <div>NEW YORK, NY</div>
                         <div class="mt-3">Exclusive networking group for like-minded business professionals and entrepreneurs</div>
-                        <div class="mt-3">206member · Public <i class="bi bi-question-circle-fill"></i></div>
+                        <div class="mt-3">206member · Public <i class="bi bi-question-circle-fill"></i></div> <i class="bi bi-box-arrow-up"></i>
                         <div class="d-flex justify-content-end">
                             <i class="bi bi-box-arrow-up"></i>
                         </div>

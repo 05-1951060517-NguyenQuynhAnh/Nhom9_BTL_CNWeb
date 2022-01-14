@@ -1,3 +1,5 @@
+<?php include('config/database.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -268,11 +270,30 @@
                     <div class="container">
 
                         <div class="owl-carousel carousel1" style="height:500px;">
+                        <?php 
+            
+                            //Getting Foods from Database that are active and featured
+                            //SQL Query
+                            $sql2 = "SELECT * FROM tb_event ";
+
+                            //Execute the Query
+                            $res2 = mysqli_query($conn, $sql2);
+
+                            //Count Rows
+                            $count2 = mysqli_num_rows($res2);
+
+                            //CHeck whether food available or not
+                            if($count2>0)
+                            {
+                                //Food Available
+                                while($row=mysqli_fetch_assoc($res2))
+                                {
+                        ?>
                             <div class="item">
                                 <div class="col">
                                     <a href="#" class="text-decoration-none">
                                         <div class="card-body pe-2 ps-0">
-                                            <img src="img/3event.webp" style="border-radius: 8px;" alt="">
+                                            <img src="image/<?php echo $row['img_name']; ?>" style="border-radius: 8px;" alt="">
                                             <div class="online_event px-2">
                                                 <svg style="color:#757575;" xmlns="http://www.w3.org/2000/svg"
                                                     width="14" height="14" fill="currentColor"
@@ -286,18 +307,11 @@
                                             </div>
                                             <div class="px-2">
 
-                                                <h6 class="mt-3" style="font-size: 14px;color: #877457;">TUE, JAN 4 @
-                                                    6:00
-                                                    PM ICT</h5>
-                                                    <h6 class=" fw-bold link-dark" style="font-size: 17px;">ATELIER
-                                                        GRATUIT
-                                                        1H Passer à l’action vers un job </h6>
-                                                    <p class="text-muted mt-3 mb-4" style="font-size: 13.5px;">Hisse &
-                                                        Haut
-                                                        vers un job à impact 🌏🌱
+                                                <h6 class="mt-3" style="font-size: 14px;color: #877457;"><?php echo $row['thoigian']; ?></h5>
+                                                    <h6 class=" fw-bold link-dark" style="font-size: 17px;"> <?php echo $row['name']; ?> </h6>
+                                                    <p class="text-muted mt-3 mb-4" style="font-size: 13.5px;"><?php echo $row['content']; ?>
                                                     </p>
-                                                    <div class="mt-3 d-inline text-muted" style="margin-right:100px;">22
-                                                        attendees
+                                                    <div class="mt-3 d-inline text-muted" style="margin-right:100px;"><?php echo $row['atten'] ?> attendees
                                                     </div>
                                                     <div class="d-inline">
                                                         <button class="border-0 bg-white "><i
@@ -310,7 +324,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="item">
+                            <!-- <div class="item">
                                 <div class="col">
                                     <a href="#" class="text-decoration-none">
                                         <div class="card-body pe-2 ps-0">
@@ -350,8 +364,8 @@
                                         </div>
                                     </a>
                                 </div>
-                            </div>
-                            <div class="item">
+                            </div> -->
+                            <!-- <div class="item">
                                 <div class="col">
                                     <a href="#" class="text-decoration-none">
                                         <div class="card-body pe-2 ps-0">
@@ -391,8 +405,8 @@
                                         </div>
                                     </a>
                                 </div>
-                            </div>
-                            <div class="item">
+                            </div> -->
+                            <!-- <div class="item">
                                 <div class="col">
                                     <a href="#" class="text-decoration-none">
                                         <div class="card-body pe-2 ps-0">
@@ -432,8 +446,8 @@
                                         </div>
                                     </a>
                                 </div>
-                            </div>
-                            <div class="item">
+                            </div> -->
+                            <!-- <div class="item">
                                 <div class="col">
                                     <a href="#" class="text-decoration-none">
                                         <div class="card-body pe-2 ps-0">
@@ -473,8 +487,8 @@
                                         </div>
                                     </a>
                                 </div>
-                            </div>
-                            <div class="item">
+                            </div> -->
+                            <!-- <div class="item">
                                 <div class="col">
                                     <a href="#" class="text-decoration-none">
                                         <div class="card-body pe-2 ps-0">
@@ -514,7 +528,12 @@
                                         </div>
                                     </a>
                                 </div>
-                            </div>
+                            </div> -->
+                            <?php
+                            }
+                        }
+                       
+                    ?>
                             <div class="item">
                                 <div class="col">
                                     <div class="card-body pe-2 ps-0">
@@ -563,6 +582,7 @@
                                     </div>
                                 </div>
                             </div>
+                            
                         </div>
                     </div>
                 </div>

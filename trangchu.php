@@ -1,3 +1,4 @@
+<?php include('config/database.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -93,7 +94,7 @@
                         <img src="img/category2.webp" class="figure-img img-fluid rounded mb-1"
                             style="border-radius:8px;" alt="...">
                         <figcaption class="figure-caption">
-                            <a href="figure-cation" class="fw-bold"> Explore the outdoors<svg
+                            <a href="figure-cation" class="fw-bold">Explore the outdoors<svg
                                     xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
                                     class="bi bi-arrow-right-short" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd"
@@ -207,6 +208,79 @@
             </div>
             <!-- Upcoming online events --------------------------------------------------------------------------------------------------------------->
             <div class="groups">
+                <div class="d-flex mb-4">
+                    <div class="col-md-10">
+
+                        <h3 class="d-inline fw-bold">Upcoming online events</h3>
+                    </div>
+                    <div class="col-md" style="padding-left:35px ">
+
+                        <a href="" class="d-inline" style="color: #008294;">Explore more events</a>
+                    </div>
+                </div>
+                <div class="container p-0">
+                    <div class="owl-carousel carousel1" style="height:500px;">
+                        <?php 
+            
+                            //Getting Foods from Database that are active and featured
+                            //SQL Query
+                            $sql2 = "SELECT * FROM tb_event ";
+
+                            //Execute the Query
+                            $res2 = mysqli_query($conn, $sql2);
+
+                            //Count Rows
+                            $count2 = mysqli_num_rows($res2);
+
+                            //CHeck whether food available or not
+                            if($count2>0)
+                            {
+                                //Food Available
+                                while($row=mysqli_fetch_assoc($res2))
+                                {
+                        ?>
+                        <div class="item">
+                            <div class="col">
+                                <a href="#" class="text-decoration-none">
+                                    <div class="card-body pe-2 ps-0">
+
+
+                                        <img src="image/<?php echo $row['img_name']; ?>" style="border-radius: 8px;"
+                                            alt="">
+                                        <div class="online_event px-2">
+                                            <svg style="color:#757575;" xmlns="http://www.w3.org/2000/svg" width="14"
+                                                height="14" fill="currentColor" class="bi bi-camera-video-fill"
+                                                viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5z" />
+                                            </svg>
+                                            <p class="mb-0 ms-1 fw-bold"
+                                                style="font-size:12px;color:#757575;margin-top:-2px">Online Event </p>
+                                        </div>
+                                        <div class="px-2">
+
+                                            <h5 class="mt-3" style="font-size: 14px;color: #877457;">
+                                                <?php echo $row['thoigian']; ?></h5>
+                                                <h6 class=" fw-bold link-dark" style="font-size: 17px;">
+                                                    <?php echo $row['content']; ?></h6>
+                                                <p class="text-muted mt-3 mb-5" style="font-size: 13.5px;">
+                                                    <?php echo $row['name']; ?>
+                                                </p>
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <?php
+                            }
+                        }
+                       
+                    ?>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="groups">
                 <div class="d-flex mb-4">
                     <div class="col-md-10">
 
@@ -644,7 +718,7 @@
                     </div>
                 </div>
 
-            </div>
+            </div> -->
             <!-- Phần Popular groups ------------------------------------------------------------------------------------------------------------------>
             <div class="groups" style="margin-bottom:150px; height:300px">
                 <div class="d-flex mb-4">
@@ -660,152 +734,53 @@
                 <div class="container p-0">
 
                     <div class="owl-carousel carousel2">
-                        <div class="item">
-                            <div class="col p-0 border me-3">
-                                <div class="group_card " style="padding: 12px;">
-                                    <a href="" class="text-decoration-none">
-                                        <div class="d-flex items-center border-bottom pb-3">
-                                            <div class=" me-3">
-                                                <img src="img/70x70.jpg" alt=""
-                                                    style="height:55px ;width:55px; border-radius:7px">
-                                            </div>
-                                            <h5 class="mt-3 fw-bold link-dark">
-                                                Online Improv
-                                            </h5>
-                                        </div>
-                                    </a>
-                                    <a href="" class="text-decoration-none">
-                                        <div class="mt-3">
-                                            <p class="mb-2">SAT, DEC 25 @ 8:00 PM 2021</p>
-                                            <h6 class="fw-bold link-dark">English communication</h6>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="col p-0 border me-3">
-                                <div class="group_card " style="padding: 12px;">
-                                    <a href="" class="text-decoration-none">
-                                        <div class="d-flex items-center border-bottom pb-3">
-                                            <div class=" me-3">
-                                                <img src="img/70x70 (1).jpg" alt=""
-                                                    style="height:55px ;width:55px; border-radius:7px">
-                                            </div>
-                                            <h5 class="mt-2 mb-0 fw-bold link-dark">
-                                                Leap - Conversations for Curious Minds
-                                            </h5>
-                                        </div>
-                                    </a>
-                                    <a href="" class="text-decoration-none">
-                                        <div class="mt-3">
-                                            <p class="mb-2">SAT, DEC 25 @ 8:00 PM 2021 ICT</p>
-                                            <h6 class="fw-bold link-dark">Pistachio! - A chat to consider one of life's
-                                                challenges together</h6>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="col p-0 border me-3">
-                                <div class="group_card " style="padding: 12px;">
-                                    <a href="" class="text-decoration-none">
-                                        <div class="d-flex items-center border-bottom pb-3">
-                                            <div class=" me-3">
-                                                <img src="img/70x70 (2).jpg" alt=""
-                                                    style="height:55px ;width:55px; border-radius:7px">
-                                            </div>
-                                            <h5 class="mt-2 mb-0 fw-bold link-dark">
-                                                New York History and Culture - Experience NY...
-                                            </h5>
-                                        </div>
-                                    </a>
-                                    <a href="" class="text-decoration-none">
-                                        <div class="mt-3">
-                                            <p class="mb-2">SAT, DEC 25 @ 8:00 PM 2021 ICT</p>
-                                            <h6 class="fw-bold link-dark">Donna Summer: The Queen of Disco Music History
-                                                Livestream</h6>
+                    <?php 
+            
+                        //Getting Foods from Database that are active and featured
+                        //SQL Query
+                        $sql = "SELECT * FROM tb_group ";
 
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                        //Execute the Query
+                        $res = mysqli_query($conn, $sql);
+
+                        //Count Rows
+                        $count = mysqli_num_rows($res);
+
+                        //CHeck whether food available or not
+                        if($count>0)
+                        {
+                            //Food Available
+                            while($row=mysqli_fetch_assoc($res))
+                            {
+                    ?>
                         <div class="item">
                             <div class="col p-0 border me-3">
                                 <div class="group_card " style="padding: 12px;">
                                     <a href="" class="text-decoration-none">
                                         <div class="d-flex items-center border-bottom pb-3">
                                             <div class=" me-3">
-                                                <img src="img/70x70 (3).jpg" alt=""
+                                                <img src="image/<?php echo $row['img_gr']?>" alt=""
                                                     style="height:55px ;width:55px; border-radius:7px">
                                             </div>
-                                            <h5 class="mt-2 mb-0 fw-bold link-dark">
-                                                International Friend Connection East Coast
+                                            <h5 class="mt-1 fw-bold link-dark">
+                                            <?php echo $row['name_gr']?>
                                             </h5>
                                         </div>
                                     </a>
                                     <a href="" class="text-decoration-none">
                                         <div class="mt-3">
-                                            <p class="mb-2">MON, DEC 27 @ 7:00 AM ICT</p>
-                                            <h6 class="fw-bold link-dark">Hang Out On Zoom</h6>
-
+                                            <p class="mb-2"><?php echo $row['time']?></p>
+                                            <h6 class="fw-bold link-dark"><?php echo $row['content_gr']?></h6>
                                         </div>
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="col p-0 border me-3">
-                                <div class="group_card " style="padding: 12px;">
-                                    <a href="" class="text-decoration-none">
-                                        <div class="d-flex items-center border-bottom pb-3">
-                                            <div class=" me-3">
-                                                <img src="img/70x70 (4).jpg" alt=""
-                                                    style="height:55px ;width:55px; border-radius:7px">
-                                            </div>
-                                            <h5 class="mt-2 mb-0 fw-bold link-dark">
-                                                Singles Speed Dating
-                                            </h5>
-                                        </div>
-                                    </a>
-                                    <a href="" class="text-decoration-none">
-                                        <div class="mt-3">
-                                            <p class="mb-2">SUN, DEC 26 @ 11:00 PM ICT</p>
-                                            <h6 class="fw-bold link-dark">Asian Date Night (Global) | Video Speed Dating
-                                            </h6>
-
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="col p-0 border me-3">
-                                <div class="group_card " style="padding: 12px;">
-                                    <a href="" class="text-decoration-none">
-                                        <div class="d-flex items-center border-bottom pb-3">
-                                            <div class=" me-3">
-                                                <img src="img/70x70 (5).jpg" alt=""
-                                                    style="height:55px ;width:55px; border-radius:7px">
-                                            </div>
-                                            <h5 class="mt-2 mb-0 fw-bold link-dark">
-                                                Zoom meeting and coffee with other citizens of the...
-                                            </h5>
-                                        </div>
-                                    </a>
-                                    <a href="" class="text-decoration-none">
-                                        <div class="mt-3">
-                                            <p class="mb-2">MON, DEC 27 @ 12:00 AM ICT</p>
-                                            <h6 class="fw-bold link-dark">Zoom meeting and coffee with other citizens of
-                                                the world </h6>
-
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                        <?php
+                                }
+                            }
+                        ?>
+                       
                     </div>
                 </div>
 

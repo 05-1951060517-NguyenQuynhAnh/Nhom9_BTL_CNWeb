@@ -1,3 +1,4 @@
+<?php include('config/database.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -83,10 +84,10 @@
         </nav>
         <div class="tab-content mx-5" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                <p class="lead mt-3">Friends event near NewYork, NY</p>
+                <p class="lead mt-3">Suggested Events near New York, NY</p>
                 <div class="container">
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown"
+                    <div class="btn-group" >
+                        <button type="button" class="btn btn-light dropdown-toggle" style="border-radius:100px;" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Any day
                         </button>
@@ -103,7 +104,7 @@
                     </div>
 
                     <div class="btn-group">
-                        <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown"
+                        <button type="button" class="btn btn-light dropdown-toggle" style="border-radius:100px;" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Any type
                         </button>
@@ -115,7 +116,7 @@
                     </div>
 
                     <div class="btn-group">
-                        <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown"
+                        <button type="button" class="btn btn-light dropdown-toggle" style="border-radius:100px;" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Any distance
                         </button>
@@ -131,7 +132,7 @@
                     </div>
 
                     <div class="btn-group">
-                        <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown"
+                        <button type="button" class="btn btn-light dropdown-toggle" style="border-radius:100px;" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Any category
                         </button>
@@ -149,7 +150,7 @@
                     </div>
 
                     <div class="btn-group">
-                        <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown"
+                        <button type="button" class="btn btn-light dropdown-toggle" style="border-radius:100px; background:#008294; color:#fff;" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Sort by: Relevance
                         </button>
@@ -162,33 +163,35 @@
                 </div>
                 <hr class="col-md-7">
 
-                <div class="row col-md-12">
-                    <div class="col-md-2">
-                        <img src="images/ev1.jpg" width="200" height="100" alt="">
-                    </div>
-                    <div class="col-md-9 ms-3">
-                        <div>MON, JAN 3 @ 8:80 AM 2022</div>
-                        <div>Speed FRIENDING (New Year, New Friends)</div>
-                        <div>The New York Social Group (20,000+ members!)• New York, NY </div>
-                        <div>4 attendees</div>
-                        <div class="col-md-6 d-flex justify-content-end">
-                            <i class="bi bi-box-arrow-up"></i>
-                        </div>
-                    </div>
-                    <div class="col-md-7">
-                        <hr class="mt-3">
-                    </div>
-                </div>
+                <?php 
+            
+                            //Getting Foods from Database that are active and featured
+                            //SQL Query
+                            $sql = "SELECT * FROM tb_event ";
+
+                            //Execute the Query
+                            $res = mysqli_query($conn, $sql);
+
+                            //Count Rows
+                            $count = mysqli_num_rows($res);
+
+                            //CHeck whether food available or not
+                            if($count>0)
+                            {
+                                //Food Available
+                                while($row=mysqli_fetch_assoc($res))
+                                {
+                        ?>
 
                 <div class="row col-md-12">
                     <div class="col-md-2">
-                        <img src="images/ev2.jpg" width="200" height="100" alt="">
+                        <img src="image/<?php echo $row['img_name'] ?>" width="200" height="100" alt="">
                     </div>
                     <div class="col-md-9 ms-3">
-                        <div>TUE, JAN4 @ 7:30 AM 2022</div>
-                        <div>Speed-Friending</div>
-                        <div>Young Professionals & Graduate students Group • Boston, MA </div>
-                        <div>100 attendees</div>
+                        <div class="fw-bold" style="font-size: 18px;color: #877457;"><?php echo $row['thoigian'] ?></div>
+                        <div class="fw-bold"><?php echo $row['name'] ?></div>
+                        <div class="text-muted"><?php echo $row['content'] ?></div>
+                        <div class="mt-2"><?php echo $row['atten'] ?> attendees</div>
                         <div class="col-md-6 d-flex justify-content-end">
                             <i class="bi bi-box-arrow-up"></i>
                         </div>
@@ -197,132 +200,11 @@
                         <hr class="mt-3">
                     </div>
                 </div>
-
-                <div class="row col-md-12">
-                    <div class="col-md-2">
-                        <img src="images/a1.jpg" width="200" height="100" alt="">
-                    </div>
-                    <div class="col-md-9 ms-3">
-                        <div>FRI, JAN 7 @ 6:30 AM 2022</div>
-                        <div>In-Person Speed Friending</div>
-                        <div>The New York Social Group (20,000+ members!)• New York, NY </div>
-                        <div>7 attendees</div>
-                        <div class="col-md-6 d-flex justify-content-end">
-                            <i class="bi bi-box-arrow-up"></i>
-                        </div>
-                    </div>
-                    <div class="col-md-7">
-                        <hr class="mt-3">
-                    </div>
-                </div>
-
-                <div class="row col-md-12">
-                    <div class="col-md-2">
-                        <img src="images/ev3.jpg" width="200" height="100" alt="">
-                    </div>
-                    <div class="col-md-9 ms-3">
-                        <div>MON, DEC 27 @ 8:00 AM 2021</div>
-                        <div>Speed Friending Event</div>
-                        <div>NYC Speed Friending Group • New York, NY </div>
-                        <div>11 attendees</div>
-                        <div class="col-md-6 d-flex justify-content-end">
-                            <i class="bi bi-box-arrow-up"></i>
-                        </div>
-                    </div>
-                    <div class="col-md-7">
-                        <hr class="mt-3">
-                    </div>
-                </div>
-
-                <div class="row col-md-12">
-                    <div class="col-md-2">
-                        <img src="images/ev4.jpg" width="200" height="100" alt="">
-                    </div>
-                    <div class="col-md-9 ms-3">
-                        <div>THU, DEC 30 @ 9:00 AM 2021</div>
-                        <div>Meet New Friends on Zoom</div>
-                        <div>International Friend Connection East Coast• New York, NY </div>
-                        <div>50 attendees</div>
-                        <div class="col-md-6 d-flex justify-content-end">
-                            <i class="bi bi-box-arrow-up"></i>
-                        </div>
-                    </div>
-                    <div class="col-md-7">
-                        <hr class="mt-3">
-                    </div>
-                </div>
-
-                <div class="row col-md-12">
-                    <div class="col-md-2">
-                        <img src="images/ev4.jpg" width="200" height="100" alt="">
-                    </div>
-                    <div class="col-md-9 ms-3">
-                        <div>THU, JAN 6 @ 9:00 AM 2022</div>
-                        <div>Meet New Friends on Zoom</div>
-                        <div>International Friend Connection East Coast• New York, NY </div>
-                        <div>11 attendees</div>
-                        <div class="col-md-6 d-flex justify-content-end">
-                            <i class="bi bi-box-arrow-up"></i>
-                        </div>
-                    </div>
-                    <div class="col-md-7">
-                        <hr class="mt-3">
-                    </div>
-                </div>
-
-                <div class="row col-md-12">
-                    <div class="col-md-2">
-                        <img src="images/ev5.jpg" width="200" height="100" alt="">
-                    </div>
-                    <div class="col-md-9 ms-3">
-                        <div>SAT, DEC 25 @ 8:30 PM 2021</div>
-                        <div>Casual meetup to make friends</div>
-                        <div>T.F.A.G. INTERNATIONAL • Mumbai, IN </div>
-                        <div>1 attendees</div>
-                        <div class="col-md-6 d-flex justify-content-end">
-                            <i class="bi bi-box-arrow-up"></i>
-                        </div>
-                    </div>
-                    <div class="col-md-7">
-                        <hr class="mt-3">
-                    </div>
-                </div>
-
-                <div class="row col-md-12">
-                    <div class="col-md-2">
-                        <img src="images/ev5.jpg" width="200" height="100" alt="">
-                    </div>
-                    <div class="col-md-9 ms-3">
-                        <div>SUN, DEC 26 @ 8:30 PM 2021</div>
-                        <div>Casual meetup to make friends</div>
-                        <div>T.F.A.G. INTERNATIONAL • Mumbai, IN </div>
-                        <div>1 attendees</div>
-                        <div class="col-md-6 d-flex justify-content-end">
-                            <i class="bi bi-box-arrow-up"></i>
-                        </div>
-                    </div>
-                    <div class="col-md-7">
-                        <hr class="mt-3">
-                    </div>
-                </div>
-
-                <div class="row col-md-12">
-                    <div class="col-md-2">
-                        <img src="images/ev5.jpg" width="200" height="100" alt="">
-                    </div>
-                    <div class="col-md-9 ms-3">
-                        <div>WED, DEC 29 @ 8:30 PM 2021</div>
-                        <div>Casual meetup to make friends</div>
-                        <div>T.F.A.G. INTERNATIONAL • Mumbai, IN </div>
-                        <div>1 attendees</div>
-                        <div class="col-md-6 d-flex justify-content-end">
-                            <i class="bi bi-box-arrow-up"></i>
-                        </div>
-                    </div>
-                    <div class="col-md-7">
-                        <hr class="mt-3">
-                    </div>
-                </div>
+                <?php
+                                }
+                            }
+                ?>
+                
 
             </div>
             <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">

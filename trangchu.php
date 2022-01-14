@@ -9,16 +9,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/trangchu.css">
-    <title>Meetup - We are what we do</title>
-    <link rel="shortcut icon" href="img/Meetup.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
         integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
         crossorigin="anonymous" />
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" />
+        <link rel="stylesheet" href="css/trangchu_style.css">
+    <title>Meetup - We are what we do</title>
+    <link rel="shortcut icon" href="img/Meetup.png">
+    
 </head>
 
 <body>
@@ -38,21 +39,21 @@
                 </svg>
                 <div class="h-right collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
-                        <li class="nav-item">
-                            <a class="nav-link active " aria-current="page" href="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-                                    class="bi bi-globe2" viewBox="0 0 16 16">
-                                    <path
-                                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855-.143.268-.276.56-.395.872.705.157 1.472.257 2.282.287V1.077zM4.249 3.539c.142-.384.304-.744.481-1.078a6.7 6.7 0 0 1 .597-.933A7.01 7.01 0 0 0 3.051 3.05c.362.184.763.349 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9.124 9.124 0 0 1-1.565-.667A6.964 6.964 0 0 0 1.018 7.5h2.49zm1.4-2.741a12.344 12.344 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332zM8.5 5.09V7.5h2.99a12.342 12.342 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.612 13.612 0 0 1 7.5 10.91V8.5H4.51zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741H8.5zm-3.282 3.696c.12.312.252.604.395.872.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a6.696 6.696 0 0 1-.598-.933 8.853 8.853 0 0 1-.481-1.079 8.38 8.38 0 0 0-1.198.49 7.01 7.01 0 0 0 2.276 1.522zm-1.383-2.964A13.36 13.36 0 0 1 3.508 8.5h-2.49a6.963 6.963 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667zm6.728 2.964a7.009 7.009 0 0 0 2.275-1.521 8.376 8.376 0 0 0-1.197-.49 8.853 8.853 0 0 1-.481 1.078 6.688 6.688 0 0 1-.597.933zM8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855.143-.268.276-.56.395-.872A12.63 12.63 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.963 6.963 0 0 0 14.982 8.5h-2.49a13.36 13.36 0 0 1-.437 3.008zM14.982 7.5a6.963 6.963 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008h2.49zM11.27 2.461c.177.334.339.694.482 1.078a8.368 8.368 0 0 0 1.196-.49 7.01 7.01 0 0 0-2.275-1.52c.218.283.418.597.597.932zm-.488 1.343a7.765 7.765 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z" />
-                                </svg>
-                                English</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="">Log in</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="">Sign up</a>
-                        </li>
+                    <li class="nav-item">
+                                        <?php
+                                            include("template/languege.php")
+                                        ?>
+                                    </li>
+                                    <li class="nav-item">
+                                        <?php
+                                            include("template/login.php")
+                                        ?>
+                                    </li>
+                                    <li class="nav-item">
+                                        <?php
+                                            include("template/signup.php")
+                                        ?>
+                                    </li>
                     </ul>
                 </div>
             </div>
@@ -221,21 +222,11 @@
                 <div class="container p-0">
                     <div class="owl-carousel carousel1" style="height:500px;">
                         <?php 
-            
-                            //Getting Foods from Database that are active and featured
-                            //SQL Query
                             $sql2 = "SELECT * FROM tb_event ";
-
-                            //Execute the Query
                             $res2 = mysqli_query($conn, $sql2);
-
-                            //Count Rows
                             $count2 = mysqli_num_rows($res2);
-
-                            //CHeck whether food available or not
                             if($count2>0)
                             {
-                                //Food Available
                                 while($row=mysqli_fetch_assoc($res2))
                                 {
                         ?>
@@ -280,445 +271,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="groups">
-                <div class="d-flex mb-4">
-                    <div class="col-md-10">
-
-                        <h3 class="d-inline fw-bold">Upcoming online events</h3>
-                    </div>
-                    <div class="col-md" style="padding-left:35px ">
-
-                        <a href="" class="d-inline" style="color: #008294;">Explore more events</a>
-                    </div>
-                </div>
-                <div class="container p-0">
-
-                    <div class="owl-carousel carousel1" style="height:500px;">
-                        <div class="item">
-                            <div class="col">
-                                <a href="#" class="text-decoration-none">
-                                    <div class="card-body pe-2 ps-0">
-                                        <img src="img/398x224.webp" style="border-radius: 8px;" alt="">
-                                        <div class="online_event px-2">
-                                            <svg  style="color:#757575;"xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                fill="currentColor" class="bi bi-camera-video-fill" viewBox="0 0 16 16">
-                                                <path fill-rule="evenodd"
-                                                    d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5z" />
-                                            </svg>
-                                            <p class="mb-0 ms-1 fw-bold" style="font-size:12px;color:#757575;margin-top:-2px">Online Event   </p>
-                                        </div>
-                                        <div class="px-2">
-
-                                            <h6 class="mt-3" style="font-size: 14px;color: #877457;">MON, JAN 3 @ 7:00
-                                                AM ICT</h5>
-                                                <h6 class=" fw-bold link-dark" style="font-size: 17px;">New York & New
-                                                    Jersey Virtual
-                                                    Dating</h6>
-                                                <p class="text-muted mt-3 mb-5" style="font-size: 13.5px;">New York
-                                                    Matchmaking Dating
-                                                </p>
-                                                <div class="avatar">
-                                                    <div class="row ">
-                                                        <div class="col">
-
-                                                            <img class="avatar_3 d-inline" src="img/30x30 (2).webp"
-                                                                style="border-radius: 20px; border: 2px solid white; height:30px; width:30px"
-                                                                alt="">
-                                                            <img class="avatar_2 d-inline" src="img/30x30 (1).webp"
-                                                                style="border-radius: 20px; border: 2px solid white;height:30px; width:30px"
-                                                                alt="">
-                                                            <img class="avatar_1 d-inline " src="img/30x30.webp"
-                                                                style="border-radius: 20px; border: 2px solid white;height:30px; width:30px"
-                                                                alt="">
-                                                            <p class="text-muted pt-1 "
-                                                                style="font-size:15px; margin-left:80px;">210</p>
-                                                        </div>
-                                                        <div class="col">
-
-                                                        </div>
-                                                        <div class="col">
-                                                            <svg style="margin-left:50px;color:#b3b3b3;"
-                                                                xmlns="http://www.w3.org/2000/svg" width="20"
-                                                                height="20" fill="currentColor"
-                                                                class="bi bi-box-arrow-up" viewBox="0 0 16 16">
-                                                                <path fill-rule="evenodd"
-                                                                    d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1h-2z" />
-                                                                <path fill-rule="evenodd"
-                                                                    d="M7.646.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 1.707V10.5a.5.5 0 0 1-1 0V1.707L5.354 3.854a.5.5 0 1 1-.708-.708l3-3z" />
-                                                            </svg>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="col">
-                                <a href="#" class="text-decoration-none">
-                                    <div class="card-body pe-2 ps-0">
-                                        <img src="img/event1.webp" style="border-radius: 8px;" alt="">
-                                        <div class="online_event px-2">
-                                            <svg  style="color:#757575;"xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                fill="currentColor" class="bi bi-camera-video-fill" viewBox="0 0 16 16">
-                                                <path fill-rule="evenodd"
-                                                    d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5z" />
-                                            </svg>
-                                            <p class="mb-0 ms-1 fw-bold" style="font-size:12px;color:#757575;margin-top:-2px">Online Event   </p>
-                                        </div>
-                                        <div class="px-2">
-
-                                            <h6 class="mt-3" style="font-size: 14px;color: #877457;">MON, JAN 3 @ 7:00
-                                                AM ICT</h5>
-                                                <h6 class=" fw-bold link-dark" style="font-size: 17px;">New Jersey
-                                                    Virtual Dating</h6>
-                                                <p class="text-muted mt-3 mb-5" style="font-size: 13.5px;">New Jersey
-                                                    Matchmaking Dating
-                                                </p>
-                                                <div class="avatar">
-                                                    <div class="row ">
-                                                        <div class="col mt-3">
-
-                                                            <img class="avatar_3 d-inline" src="img/av2.webp"
-                                                                style="border-radius: 20px; border: 2px solid white; height:30px; width:30px"
-                                                                alt="">
-                                                            <img class="avatar_2 d-inline" src="img/av1.webp"
-                                                                style="border-radius: 20px; border: 2px solid white;height:30px; width:30px"
-                                                                alt="">
-                                                            <img class="avatar_1 d-inline " src="img/30x30.webp"
-                                                                style="border-radius: 20px; border: 2px solid white;height:30px; width:30px"
-                                                                alt="">
-                                                            <p class="text-muted pt-1 "
-                                                                style="font-size:15px; margin-left:80px;">71</p>
-                                                        </div>
-                                                        <div class="col">
-
-                                                        </div>
-                                                        <div class="col">
-                                                            <svg style="margin-left:50px;color:#b3b3b3;"
-                                                                xmlns="http://www.w3.org/2000/svg" width="20"
-                                                                height="20" fill="currentColor"
-                                                                class="bi bi-box-arrow-up" viewBox="0 0 16 16">
-                                                                <path fill-rule="evenodd"
-                                                                    d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1h-2z" />
-                                                                <path fill-rule="evenodd"
-                                                                    d="M7.646.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 1.707V10.5a.5.5 0 0 1-1 0V1.707L5.354 3.854a.5.5 0 1 1-.708-.708l3-3z" />
-                                                            </svg>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="col">
-                                <a href="#" class="text-decoration-none">
-                                    <div class="card-body pe-2 ps-0">
-                                        <img src="img/event2.webp" style="border-radius: 8px;" alt="">
-                                        <div class="online_event px-2">
-                                            <svg  style="color:#757575;"xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                fill="currentColor" class="bi bi-camera-video-fill" viewBox="0 0 16 16">
-                                                <path fill-rule="evenodd"
-                                                    d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5z" />
-                                            </svg>
-                                            <p class="mb-0 ms-1 fw-bold" style="font-size:12px;color:#757575;margin-top:-2px">Online Event   </p>
-                                        </div>
-                                        <div class="px-2">
-
-                                            <h6 class="mt-3" style="font-size: 14px;color: #877457;">SAT, JAN 1 @ 7:00
-                                                AM ICT</h5>
-                                                <h6 class=" fw-bold link-dark" style="font-size: 17px;">OASIS CHRISTIAN
-                                                    SINGLES NEW YEARS EVE ZOOM CELEBRATION</h6>
-                                                <p class="text-muted mt-3 mb-4" style="font-size: 13.5px;">OASIS
-                                                    Tri-State Christian Singles Events
-                                                </p>
-                                                <div class="avatar">
-                                                    <div class="row ">
-                                                        <div class="col">
-
-                                                            <img class="avatar_3 d-inline" src="img/av4.webp"
-                                                                style="border-radius: 20px; border: 2px solid white; height:30px; width:30px"
-                                                                alt="">
-                                                            <img class="avatar_2 d-inline" src="img/av3.webp"
-                                                                style="border-radius: 20px; border: 2px solid white;height:30px; width:30px"
-                                                                alt="">
-                                                            <img class="avatar_1 d-inline " src="img/av1.webp"
-                                                                style="border-radius: 20px; border: 2px solid white;height:30px; width:30px"
-                                                                alt="">
-                                                            <p class="text-muted pt-1 "
-                                                                style="font-size:15px; margin-left:80px;">56</p>
-                                                        </div>
-                                                        <div class="col">
-
-                                                        </div>
-                                                        <div class="col">
-                                                            <svg style="margin-left:50px;color:#b3b3b3;"
-                                                                xmlns="http://www.w3.org/2000/svg" width="20"
-                                                                height="20" fill="currentColor"
-                                                                class="bi bi-box-arrow-up" viewBox="0 0 16 16">
-                                                                <path fill-rule="evenodd"
-                                                                    d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1h-2z" />
-                                                                <path fill-rule="evenodd"
-                                                                    d="M7.646.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 1.707V10.5a.5.5 0 0 1-1 0V1.707L5.354 3.854a.5.5 0 1 1-.708-.708l3-3z" />
-                                                            </svg>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="col">
-                                <a href="#" class="text-decoration-none">
-                                    <div class="card-body pe-2 ps-0">
-                                        <img src="img/event3.webp" style="border-radius: 8px;" alt="">
-                                        <div class="online_event px-2">
-                                            <svg  style="color:#757575;"xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                fill="currentColor" class="bi bi-camera-video-fill" viewBox="0 0 16 16">
-                                                <path fill-rule="evenodd"
-                                                    d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5z" />
-                                            </svg>
-                                            <p class="mb-0 ms-1 fw-bold" style="font-size:12px;color:#757575;margin-top:-2px">Online Event   </p>
-                                        </div>
-                                        <div class="px-2">
-
-                                            <h6 class="mt-3" style="font-size: 14px;color: #877457;">FRI, JAN 14 @ 7:00
-                                                AM ICT</h5>
-                                                <h6 class=" fw-bold link-dark" style="font-size: 17px;">First Ever NYC
-                                                    Young Professionals Book Club Meeting </h6>
-                                                <p class="text-muted mt-3 mb-4" style="font-size: 13.5px;">NYC Young
-                                                    Professionals Book Club
-                                                </p>
-                                                <div class="avatar">
-                                                    <div class="row ">
-                                                        <div class="col">
-
-                                                            <img class="avatar_3 d-inline" src="img/30x30 (2).webp"
-                                                                style="border-radius: 20px; border: 2px solid white; height:30px; width:30px"
-                                                                alt="">
-                                                            <img class="avatar_2 d-inline" src="img/av6.webp"
-                                                                style="border-radius: 20px; border: 2px solid white;height:30px; width:30px"
-                                                                alt="">
-                                                            <img class="avatar_1 d-inline " src="img/av5.webp"
-                                                                style="border-radius: 20px; border: 2px solid white;height:30px; width:30px"
-                                                                alt="">
-                                                            <p class="text-muted pt-1 "
-                                                                style="font-size:15px; margin-left:80px;">40</p>
-                                                        </div>
-                                                        <div class="col">
-
-                                                        </div>
-                                                        <div class="col">
-                                                            <svg style="margin-left:50px;color:#b3b3b3;"
-                                                                xmlns="http://www.w3.org/2000/svg" width="20"
-                                                                height="20" fill="currentColor"
-                                                                class="bi bi-box-arrow-up" viewBox="0 0 16 16">
-                                                                <path fill-rule="evenodd"
-                                                                    d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1h-2z" />
-                                                                <path fill-rule="evenodd"
-                                                                    d="M7.646.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 1.707V10.5a.5.5 0 0 1-1 0V1.707L5.354 3.854a.5.5 0 1 1-.708-.708l3-3z" />
-                                                            </svg>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="col">
-                                <a href="#" class="text-decoration-none">
-                                    <div class="card-body pe-2 ps-0">
-                                        <img src="img/event4.webp" style="border-radius: 8px;" alt="">
-                                        <div class="online_event px-2">
-                                            <svg  style="color:#757575;"xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                fill="currentColor" class="bi bi-camera-video-fill" viewBox="0 0 16 16">
-                                                <path fill-rule="evenodd"
-                                                    d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5z" />
-                                            </svg>
-                                            <p class="mb-0 ms-1 fw-bold" style="font-size:12px;color:#757575;margin-top:-2px">Online Event   </p>
-                                        </div>
-                                        <div class="px-2">
-
-                                            <h6 class="mt-3" style="font-size: 14px;color: #877457;">SUN, JAN 2 @ 11:00
-                                                PM ICT</h5>
-                                                <h6 class=" fw-bold link-dark" style="font-size: 17px;">Van Gogh Museum
-                                                    - Amsterdam: Livestream Art Tour</h6>
-                                                <p class="text-muted mt-3 mb-4" style="font-size: 13.5px;">New York
-                                                    History and Culture - ...
-                                                </p>
-                                                <div class="avatar">
-                                                    <div class="row ">
-                                                        <div class="col">
-
-                                                            <img class="avatar_3 d-inline" src="img/av9.webp"
-                                                                style="border-radius: 20px; border: 2px solid white; height:30px; width:30px"
-                                                                alt="">
-                                                            <img class="avatar_2 d-inline" src="img/av8.webp"
-                                                                style="border-radius: 20px; border: 2px solid white;height:30px; width:30px"
-                                                                alt="">
-                                                            <img class="avatar_1 d-inline " src="img/av7.webp"
-                                                                style="border-radius: 20px; border: 2px solid white;height:30px; width:30px"
-                                                                alt="">
-                                                            <p class="text-muted pt-1 "
-                                                                style="font-size:15px; margin-left:80px;">306</p>
-                                                        </div>
-                                                        <div class="col">
-
-                                                        </div>
-                                                        <div class="col">
-                                                            <svg style="margin-left:50px;color:#b3b3b3;"
-                                                                xmlns="http://www.w3.org/2000/svg" width="20"
-                                                                height="20" fill="currentColor"
-                                                                class="bi bi-box-arrow-up" viewBox="0 0 16 16">
-                                                                <path fill-rule="evenodd"
-                                                                    d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1h-2z" />
-                                                                <path fill-rule="evenodd"
-                                                                    d="M7.646.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 1.707V10.5a.5.5 0 0 1-1 0V1.707L5.354 3.854a.5.5 0 1 1-.708-.708l3-3z" />
-                                                            </svg>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="col">
-                                <a href="#" class="text-decoration-none">
-                                    <div class="card-body pe-2 ps-0">
-                                        <img src="img/event5.webp" style="border-radius: 8px;" alt="">
-                                        <div class="online_event px-2">
-                                            <svg  style="color:#757575;"xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                fill="currentColor" class="bi bi-camera-video-fill" viewBox="0 0 16 16">
-                                                <path fill-rule="evenodd"
-                                                    d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5z" />
-                                            </svg>
-                                            <p class="mb-0 ms-1 fw-bold" style="font-size:12px;color:#757575;margin-top:-2px">Online Event   </p>
-                                        </div>
-                                        <div class="px-2">
-
-                                            <h6 class="mt-3" style="font-size: 14px;color: #877457;">SAT, JAN 8 @ 11:00
-                                                PM ICT</h5>
-                                                <h6 class=" fw-bold link-dark" style="font-size: 17px;">Online
-                                                    Spanish-English Language Exchange - New Year's Resolution!</h6>
-                                                <p class="text-muted mt-3 mb-4" style="font-size: 13.5px;">Spanglish
-                                                    Languages and Culture ...
-                                                <div class="avatar">
-                                                    <div class="row ">
-                                                        <div class="col">
-
-                                                            <img class="avatar_3 d-inline" src="img/av11.webp"
-                                                                style="border-radius: 20px; border: 2px solid white; height:30px; width:30px"
-                                                                alt="">
-                                                            <img class="avatar_2 d-inline" src="img/av1.webp"
-                                                                style="border-radius: 20px; border: 2px solid white;height:30px; width:30px"
-                                                                alt="">
-                                                            <img class="avatar_1 d-inline " src="img/av10.webp"
-                                                                style="border-radius: 20px; border: 2px solid white;height:30px; width:30px"
-                                                                alt="">
-                                                            <p class="text-muted pt-1 "
-                                                                style="font-size:15px; margin-left:80px;">26</p>
-                                                        </div>
-                                                        <div class="col">
-
-                                                        </div>
-                                                        <div class="col">
-                                                            <svg style="margin-left:50px;color:#b3b3b3;"
-                                                                xmlns="http://www.w3.org/2000/svg" width="20"
-                                                                height="20" fill="currentColor"
-                                                                class="bi bi-box-arrow-up" viewBox="0 0 16 16">
-                                                                <path fill-rule="evenodd"
-                                                                    d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1h-2z" />
-                                                                <path fill-rule="evenodd"
-                                                                    d="M7.646.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 1.707V10.5a.5.5 0 0 1-1 0V1.707L5.354 3.854a.5.5 0 1 1-.708-.708l3-3z" />
-                                                            </svg>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="col">
-                                <a href="#" class="text-decoration-none">
-                                    <div class="card-body pe-2 ps-0">
-                                        <img src="img/event6.webp" style="border-radius: 8px;" alt="">
-                                        <div class="online_event px-2">
-                                            <svg  style="color:#757575;"xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                fill="currentColor" class="bi bi-camera-video-fill" viewBox="0 0 16 16">
-                                                <path fill-rule="evenodd"
-                                                    d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5z" />
-                                            </svg>
-                                            <p class="mb-0 ms-1 fw-bold" style="font-size:12px;color:#757575;margin-top:-2px">Online Event   </p>
-                                        </div>
-                                        <div class="px-2">
-
-                                            <h6 class="mt-3" style="font-size: 14px;color: #877457;">WED, JAN 12 @ 6:30
-                                                AM ICT</h5>
-                                                <h6 class=" fw-bold link-dark" style="font-size: 17px;">Web3 Blockchain
-                                                    Game Development with Unity3D and ChainSafe
-                                                </h6>
-                                                <p class="text-muted mt-3 mb-4" style="font-size: 13.5px;">Big Apple
-                                                    DeFi
-                                                </p>
-                                                <div class="avatar">
-                                                    <div class="row ">
-                                                        <div class="col">
-
-                                                            <img class="avatar_3 d-inline" src="img/av1.webp"
-                                                                style="border-radius: 20px; border: 2px solid white; height:30px; width:30px"
-                                                                alt="">
-                                                            <img class="avatar_2 d-inline" src="img/av1.webp"
-                                                                style="border-radius: 20px; border: 2px solid white;height:30px; width:30px"
-                                                                alt="">
-                                                            <img class="avatar_1 d-inline " src="img/av12.webp"
-                                                                style="border-radius: 20px; border: 2px solid white;height:30px; width:30px"
-                                                                alt="">
-                                                            <p class="text-muted pt-1 "
-                                                                style="font-size:15px; margin-left:80px;">33</p>
-                                                        </div>
-                                                        <div class="col">
-
-                                                        </div>
-                                                        <div class="col">
-                                                            <svg style="margin-left:50px;color:#b3b3b3;"
-                                                                xmlns="http://www.w3.org/2000/svg" width="20"
-                                                                height="20" fill="currentColor"
-                                                                class="bi bi-box-arrow-up" viewBox="0 0 16 16">
-                                                                <path fill-rule="evenodd"
-                                                                    d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1h-2z" />
-                                                                <path fill-rule="evenodd"
-                                                                    d="M7.646.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 1.707V10.5a.5.5 0 0 1-1 0V1.707L5.354 3.854a.5.5 0 1 1-.708-.708l3-3z" />
-                                                            </svg>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div> -->
             <!-- Phần Popular groups ------------------------------------------------------------------------------------------------------------------>
             <div class="groups" style="margin-bottom:150px; height:300px">
                 <div class="d-flex mb-4">
@@ -735,18 +287,9 @@
 
                     <div class="owl-carousel carousel2">
                     <?php 
-            
-                        //Getting Foods from Database that are active and featured
-                        //SQL Query
                         $sql = "SELECT * FROM tb_group ";
-
-                        //Execute the Query
                         $res = mysqli_query($conn, $sql);
-
-                        //Count Rows
                         $count = mysqli_num_rows($res);
-
-                        //CHeck whether food available or not
                         if($count>0)
                         {
                             //Food Available
@@ -816,7 +359,7 @@
                             <img src="img/first_article.webp" class="card-img-top" alt="...">
                             <div class="card-body px-0 ">
                                 <h5 class="card-title"><a href="card-title"
-                                        class="link-dark text-decoration-none fw-bold">Three Ways To Make Coworker
+                                        class="link-dark  fw-bold">Three Ways To Make Coworker
                                         Friendships While Working From Home</a></h5>
                                 <p class="card-text text-muted mt-3">Work friendships don't need to fade just because
                                     you're working remotely. Here are three fun ways you can get to know your
@@ -829,7 +372,7 @@
                             <img src="img/second_article.webp" class="card-img-top" alt="...">
                             <div class="card-body px-0">
                                 <h5 class="card-title"><a href="card-title"
-                                        class="link-dark text-decoration-none fw-bold">Five Ways to Feel More
+                                        class="link-dark fw-bold">Five Ways to Feel More
                                         Connected</a></h5>
                                 <p class="card-text text-muted mt-3">Since Meetup began nearly 20 years ago, we've
                                     fostered connections between more than 50 million pepple in 190 countries worldwide.
@@ -843,7 +386,7 @@
                             <img src="img/third_article.webp" class="card-img-top" alt="...">
                             <div class="card-body px-0">
                                 <h5 class="card-title"><a href="card-title"
-                                        class="link-dark text-decoration-none fw-bold">How To Live Your Best Social
+                                        class="link-dark fw-bold">How To Live Your Best Social
                                         Life</a></h5>
                                 <p class="card-text text-muted mt-3">Social interaction is a key part of any healthy
                                     lifestyle. Discover all different kinds of events that'll help you maintain a fun

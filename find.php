@@ -86,7 +86,7 @@
         </nav>
         <div class="tab-content mx-5" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                <p class="lead mt-3">Suggested Events near New York, NY</p>
+                <p class="lead text-muted mt-3">Suggested Events near New York, NY</p>
                 <div class="container">
                     <div class="btn-group" >
                         <button type="button" class="btn btn-light dropdown-toggle" style="border-radius:100px;" data-bs-toggle="dropdown"
@@ -186,20 +186,20 @@
                         ?>
 
                 <div class="row col-md-12">
-                    <div class="col-md-2">
-                        <img src="image/<?php echo $row['img_name'] ?>" width="200" height="100" alt="">
+                    <div class="col-md-2" >
+                        <img style="border-radius:8px;" src="image/<?php echo $row['img_name'] ?>" width="200" height="100" alt="">
                     </div>
                     <div class="col-md-9 ms-3">
                         <div class="fw-bold" style="font-size: 18px;color: #877457;"><?php echo $row['thoigian'] ?></div>
-                        <div class="fw-bold"><?php echo $row['name'] ?></div>
-                        <div class="text-muted"><?php echo $row['content'] ?></div>
-                        <div class="mt-2"><?php echo $row['atten'] ?> attendees</div>
+                        <div class="fw-bold mt-1"><?php echo $row['name'] ?></div>
+                        <div class="text-muted mt-1"><?php echo $row['content'] ?></div>
+                        <div class="mt-4"><?php echo $row['atten'] ?> attendees</div>
                         <div class="col-md-6 d-flex justify-content-end">
                             <i class="bi bi-box-arrow-up"></i>
                         </div>
                     </div>
                     <div class="col-md-7">
-                        <hr class="mt-3">
+                        <hr class="mt-2">
                     </div>
                 </div>
                 <?php
@@ -210,9 +210,9 @@
 
             </div>
             <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                <p class="lead mt-3">Friends event near NewYork, NY</p>
+                <p class="lead text-muted mt-3">Suggested Groups near New York, NY</p>
                 <div class="btn-group">
-                    <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown"
+                    <button type="button" class="btn btn-light dropdown-toggle" style="border-radius:100px;" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         Any distance
                     </button>
@@ -228,7 +228,7 @@
                 </div>
 
                 <div class="btn-group">
-                    <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown"
+                    <button type="button" class="btn btn-light dropdown-toggle" style="border-radius:100px;" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         Any category
                     </button>
@@ -245,114 +245,47 @@
                     </ul>
                 </div>
                 <hr>
-                <div class="row col-md-12">
+                <?php 
+            
+                            //Getting Foods from Database that are active and featured
+                            //SQL Query
+                            $sql1 = "SELECT * FROM tb_group ";
+
+                            //Execute the Query
+                            $res1 = mysqli_query($conn, $sql1);
+
+                            //Count Rows
+                            $count1 = mysqli_num_rows($res1);
+
+                            //CHeck whether food available or not
+                            if($count1>0)
+                            {
+                                //Food Available
+                                while($row=mysqli_fetch_assoc($res1))
+                                {
+                        ?>
+                    <div class="row col-md-12">
                     <div class="col-md-2">
-                        <img src="images/gr1.jpg" width="200" height="120" alt="">
+                        <img style="border-radius:8px;" src="image/<?php echo $row['img_gr'] ?>" width="200" height="100" alt="">
                     </div>
                     <div class="col-md-5 ms-3">
-                        <div>Long Island Friends</div>
-                        <div>MELVILLE, NY</div>
-                        <div class="mt-3">This is a a group for people who live and work in NY and the surrounding area,
-                            but who recognize we are in one of the greate...</div>
-                        <div class="mt-3">1484 members · Public <i class="bi bi-question-circle-fill"></i></div>
+                        
+                        <div class="fw-bold" style="font-size: 18px;"><?php echo $row['name_gr'] ?></div>
+                        <div class="fw-bold" style="font-size: 16px;color: #877457;"><?php echo $row['location'] ?></div>
+                        <div class="text-muted mt-3"><?php echo $row['content_gr'] ?></div>
+                        <div class="text-muted mt-3"><?php echo $row['members'] ?> members • <?php echo $row['mode'] ?> <i class="bi bi-question-circle-fill"></i></div>
                         <div class="d-flex justify-content-end">
                             <i class="bi bi-box-arrow-up"></i>
                         </div>
                     </div>
                     <div class="col-md-7">
-                        <hr class="mt-3">
+                        <hr class="mt-2">
                     </div>
                 </div>
-                <div class="row col-md-12">
-                    <div class="col-md-2">
-                        <img src="images/a2.jpg" width="200" height="120" alt="">
-                    </div>
-                    <div class="col-md-5 ms-3">
-                        <div>NYC and Long Island Friends</div>
-                        <div>NEW YORK, NY</div>
-                        <div class="mt-3">This is a a group for people who live and work in NY and the surrounding area,
-                            but who recognize we are in one of the greate...</div>
-                        <div class="mt-3">1300 members · Public <i class="bi bi-question-circle-fill"></i></div>
-                        <div class="d-flex justify-content-end">
-                            <i class="bi bi-box-arrow-up"></i>
-                        </div>
-                    </div>
-                    <div class="col-md-7">
-                        <hr class="mt-3">
-                    </div>
-                </div>
-                <div class="row col-md-12">
-                    <div class="col-md-2">
-                        <img src="images/gr2.jpg" width="200" height="120" alt="">
-                    </div>
-                    <div class="col-md-5 ms-3">
-                        <div>Friends of Pauley</div>
-                        <div>WOODBURY, NY</div>
-                        <div class="mt-3">This is a a group where are going to be doing diffrent activitis on Long
-                            Island. Some of these will be bowling, game nights,...</div>
-                        <div class="mt-3">87 members · Public <i class="bi bi-question-circle-fill"></i></div>
-                        <div class="d-flex justify-content-end">
-                            <i class="bi bi-box-arrow-up"></i>
-                        </div>
-                    </div>
-                    <div class="col-md-7">
-                        <hr class="mt-3">
-                    </div>
-                </div>
-                <div class="row col-md-12">
-                    <div class="col-md-2">
-                        <img src="images/gr3.jpg" width="200" height="120" alt="">
-                    </div>
-                    <div class="col-md-5 ms-3">
-                        <div>Outdoor Friends Group</div>
-                        <div>JERICHO, NY</div>
-                        <div class="mt-3">This group is of people looking to meet others outdoors during this
-                            challenging time. Outdoors will include and talk, gather...</div>
-                        <div class="mt-3">425 members · Public <i class="bi bi-question-circle-fill"></i></div>
-                        <div class="d-flex justify-content-end">
-                            <i class="bi bi-box-arrow-up"></i>
-                        </div>
-                    </div>
-                    <div class="col-md-7">
-                        <hr class="mt-3">
-                    </div>
-                </div>
-                <div class="row col-md-12">
-                    <div class="col-md-2">
-                        <img src="images/gr4.jpg" width="200" height="120" alt="">
-                    </div>
-                    <div class="col-md-5 ms-3">
-                        <div>Resistance Meals w/Friends</div>
-                        <div>OLD BETHPAGE, NY</div>
-                        <div class="mt-3">If you have to ask what the resistances is or you have to Google it, this is
-                            not the group for you. This group if for those who are... </div>
-                        <div class="mt-3">40 members · Public <i class="bi bi-question-circle-fill"></i></div>
-                        <div class="d-flex justify-content-end">
-                            <i class="bi bi-box-arrow-up"></i>
-                        </div>
-                    </div>
-                    <div class="col-md-7">
-                        <hr class="mt-3">
-                    </div>
-                </div>
-                <div class="row col-md-12">
-                    <div class="col-md-2">
-                        <img src="images/gr5.jpg" width="200" height="120" alt="">
-                    </div>
-                    <div class="col-md-5 ms-3">
-                        <div>Friends Forever Bus Tour Club</div>
-                        <div>SMITHTOWN, NY</div>
-                        <div class="mt-3">Welcome to the Friend's Forever Bus Tour Club. We offer One day Bus Tours and
-                            Multi Day Bus Tours for Individuals and Groups...</div>
-                        <div class="mt-3">2429 members · Public <i class="bi bi-question-circle-fill"></i></div>
-                        <div class="d-flex justify-content-end">
-                            <i class="bi bi-box-arrow-up"></i>
-                        </div>
-                    </div>
-                    <div class="col-md-7">
-                        <hr class="mt-3">
-                    </div>
-                </div>
+                <?php
+                                }
+                            }
+                ?>
             </div>
         </div>
     </main>

@@ -72,55 +72,212 @@
         </div>
     </nav>
     <div style="background:#fafafa;" class="container-fluid">
-        <main>
-            <div class="sidebar " style="width: 250px;">
-                <ul class="nav flex-column" style="letter-spacing: 0.65px;">
-                    <li class="nav-item d-flex justify-content-end">
-                        <a class="nav-link active" style="color:#1f24cc" aria-current="page" href="#">
-                            General
-                        </a>
-                    </li>
-                    <li class="nav-item d-flex justify-content-end">
-                        <a class="nav-link text-muted" aria-current="page" href="#">
-                            Email Updates
-                        </a>
-                    </li>
-                    <li class="nav-item d-flex justify-content-end">
-                        <a class="nav-link text-muted" aria-current="page" href="#">
-                            Mobile Notifications
-                        </a>
-                    </li>
-                    <li class="nav-item d-flex justify-content-end">
-                        <a class="nav-link text-muted" aria-current="page" href="#">
-                            Privacy
-                        </a>
-                    </li>
-                    <li class="nav-item d-flex justify-content-end">
-                        <a class="nav-link text-muted" aria-current="page" href="#">
-                            Social Media
-                        </a>
-                    </li>
-                    <li class="nav-item d-flex justify-content-end">
-                        <a class="nav-link text-muted" aria-current="page" href="#">
-                            Organizer Subscription
-                        </a>
-                    </li>
-                    <li class="nav-item d-flex justify-content-end">
-                        <a class="nav-link text-muted" aria-current="page" href="#">
-                            Payment Methods
-                        </a>
-                    </li>
-                    <li class="nav-item d-flex justify-content-end">
-                        <a class="nav-link text-muted" aria-current="page" href="#">
-                            Payments made
-                        </a>
-                    </li>
-                    <li class="nav-item d-flex justify-content-end">
-                        <a class="nav-link text-muted" aria-current="page" href="#">
-                            Apps
-                        </a>
-                    </li>
-                </ul>
+        <main class="pb-5">
+            <div class="container d-flex justify-content-center">
+                <div class="context d-flex" style="width:1000px">
+                    <div class="sidebar m-0" style="width: 150px;">
+                        <ul class="nav flex-column" style="letter-spacing: 0.65px;">
+                            <li class="nav-item text-end">
+                                <a class="nav-link active" style="color:#1f24cc" aria-current="page" href="#">
+                                    General
+                                </a>
+                            </li>
+                            <li class="nav-item text-end">
+                                <a class="nav-link text-muted" aria-current="page" href="#">
+                                    Email Updates
+                                </a>
+                            </li>
+                            <li class="nav-item text-end ">
+                                <a class="nav-link text-muted" aria-current="page" href="#">
+                                    Mobile Notifications
+                                </a>
+                            </li>
+                            <li class="nav-item text-end">
+                                <a class="nav-link text-muted" aria-current="page" href="#">
+                                    Privacy
+                                </a>
+                            </li>
+                            <li class="nav-item text-end">
+                                <a class="nav-link text-muted" aria-current="page" href="#">
+                                    Social Media
+                                </a>
+                            </li>
+                            <li class="nav-item text-end">
+                                <a class="nav-link text-muted" aria-current="page" href="#">
+                                    Organizer Subscription
+                                </a>
+                            </li>
+                            <li class="nav-item text-end">
+                                <a class="nav-link text-muted" aria-current="page" href="#">
+                                    Payment Methods
+                                </a>
+                            </li>
+                            <li class="nav-item text-end">
+                                <a class="nav-link text-muted" aria-current="page" href="#">
+                                    Payments made
+                                </a>
+                            </li>
+                            <li class="nav-item text-end">
+                                <a class="nav-link text-muted" aria-current="page" href="#">
+                                    Apps
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md bg-white rounded border">
+                        <div class="profile">
+                            <div class="px-3 pt-3 border-bottom">
+                                <h3 class="fw-bold">General</h3>
+                            </div>
+                            <div class="infor">
+                                <div class="D_boxcols divby3">
+                                    <div class="line-gutters">
+                                        <div class="unit size2of3">
+                                            <table class="fields D_personalInformation" summary="Personal information">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="fieldname border-none">
+                                                            <strong>Name:</strong>
+                                                        </td>
+                                                        <td class="border-none">
+                                                            Nguyễn Quỳnh Anh
+                                                            <a href="https://www.meetup.com/account/name"
+                                                                class="D_inlineAction">edit</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="fieldname">
+                                                            <strong>User ID:</strong>
+                                                        </td>
+                                                        <td>
+                                                            user 350351920
+                                                            <a href="https://secure.meetup.com/account/username/"
+                                                                class="D_inlineAction">edit</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="fieldname">
+                                                            <strong>Email address:</strong>
+                                                        </td>
+                                                        <td>
+                                                            qanh1662001@gmail.com
+                                                            <a href="https://secure.meetup.com/account/email/"
+                                                                class="D_inlineAction">edit</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="fieldname">
+                                                            <strong>Password:</strong>
+                                                        </td>
+                                                        <td>
+                                                            (Hidden)
+                                                            <a href="https://secure.meetup.com/account/password"
+                                                                class="D_inlineAction">edit</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="fieldname">
+                                                            <strong>Location:</strong>
+                                                        </td>
+                                                        <td>
+                                                            Thanh Hoa, Vietnam
+                                                            <a href="https://www.meetup.com/account/city/"
+                                                                class="D_inlineAction">edit</a>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td class="fieldname">
+                                                            <strong>Timezone:</strong>
+                                                        </td>
+                                                        <td>
+                                                            System Time (default)
+                                                            <a href="https://www.meetup.com/account/timezone/"
+                                                                class="D_inlineAction">edit</a>
+                                                            <div class="muted" style="font-size:12px">Your choice will
+                                                                influence how event times are displayed</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="fieldname">
+                                                            <strong>Language:</strong>
+                                                        </td>
+                                                        <td>
+                                                            English
+                                                            <a href="https://www.meetup.com/account/language/"
+                                                                class="D_inlineAction">edit</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="fieldname">
+                                                            <strong>Birthday:</strong>
+                                                        </td>
+                                                        <td>
+                                                            March 5, 1999 <a
+                                                                href="https://www.meetup.com/account/agegender/"
+                                                                class="D_inlineAction">edit</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="fieldname">
+                                                            <strong>Gender:</strong>
+                                                        </td>
+                                                        <td>
+                                                            Female <a href="https://www.meetup.com/account/agegender/"
+                                                                class="D_inlineAction">edit</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="fieldname">
+                                                            <strong>Hometown:</strong>
+                                                        </td>
+                                                        <td>
+                                                            175, Tây Sơn
+                                                            <a href="https://www.meetup.com/account/city/"
+                                                                class="D_inlineAction">edit</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="last">
+                                                        <td class="fieldname">
+                                                            <strong>Bio:</strong>
+                                                        </td>
+                                                        <td>
+                                                            <a href="https://www.meetup.com/account/bio/"
+                                                                class="D_inlineAction">add</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="unit lastUnit">
+                                            <div id="D_groupMemberProfile">
+                                                <div class="profileImageContainer">
+                                                    <a class="photo-nav-link" id="launch-profile-photos" href="#"><img
+                                                            class="D_memberProfilePhoto photo big-preview-photo"
+                                                            alt="Your photo"
+                                                            src="https://secure.meetupstatic.com/photos/member/1/d/3/1/member_308587473.jpeg"
+                                                            style="max-width:240px"></a>
+                                                    <div>
+                                                        <a href="https://www.meetup.com/account/photo/"
+                                                            class="D_meta small" id="launch-uploader">Change your
+                                                            photo</a>
+                                                    </div>
+                                                    <ul class="photo-nav-links pipeList rounded-corner-bottom">
+                                                        <li class="small">
+                                                            <a class="photo-nav-link" id="launch-profile-photos"
+                                                                href="#">Photos <span class="small">1</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
 
         </main>

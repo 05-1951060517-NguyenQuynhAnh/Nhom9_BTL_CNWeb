@@ -1,6 +1,7 @@
 <?php include('config/database.php'); ?>
 <?php 
-   $sql = "SELECT * FROM `tb_member` WHERE user_id like 1951060517;";
+    $id= $_GET['id'];
+   $sql = "SELECT * FROM `tb_member` WHERE user_id='$id';";
     $result = mysqli_query($conn,$sql);
     if(mysqli_num_rows($result)>0){
     $row = mysqli_fetch_assoc($result);
@@ -68,11 +69,14 @@
                                 <img style="border-radius: 30px;" class="avatar" src="image/<?php echo $row['avatar']?>"
                                     alt="">
                             </div>
-                            <ul class="dropdown-menu dropdown-menu-end">
-                                <li><button class="dropdown-item" type="button">Action</button></li>
-                                <li><button class="dropdown-item" type="button">Another action</button></li>
+                            <ul class="dropdown-menu dropdown-menu-end" style="font-size:13px;letter-spacing: 0.65px;">
+                                <li><button class="dropdown-item" type="button">Your events</button></li>
+                                <li><button class="dropdown-item " type="button">Your groups</button></li>
                                 <hr class="dropdown-divider">
-                                <li><button class="dropdown-item" type="button">Something else here</button></li>
+                                <li><button class="dropdown-item" type="button">View profile</button></li>
+                                <li><button class="dropdown-item" type="button">Settings</button></li>
+                                <li><button class="dropdown-item" type="button">Help</button></li>
+                                <li><button class="dropdown-item" type="button">Log out</button></li>
                             </ul>
                         </div>
                     </li>
@@ -90,20 +94,100 @@
                     src="image/<?php echo $row['avatar']?>" alt="">
             </div>
             <div class="col-md-6 p-0">
-                <h1><?php echo $row['name']?></h1>
-                <div class="d-flex col mt-4 ">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-                                class="bi bi-geo-alt-fill mt-1" style="color: #a2a2a2;"viewBox="0 0 16 16">
-                                <path
-                                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
-                            </svg>
-                            <span class="d-inline text-muted ms-2"><?php echo $row['location']?></span>
-                        </div>
-                
+                <h1 class="mb-4"><?php echo $row['name']?></h1>
+                <span class="fw-bold" style="font-size:20px;letter-spacing: 0.65px;">Member since December 2021</span>
+                <div class="d-flex col mt-3 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                        class="bi bi-geo-alt-fill mt-1" style="color: #757575;" viewBox="0 0 16 16">
+                        <path
+                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                    </svg>
+                    <span class="d-inline text-muted ms-2"><?php echo $row['location']?></span>
+                </div>
+                <div class="d-flex col mt-2 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor"
+                        class="bi bi-people-fill mt-1" viewBox="0 0 16 16" style="color: #757575;">
+                        <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                        <path fill-rule="evenodd"
+                            d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z" />
+                        <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
+                    </svg>
+                    <span class="d-inline text-muted ms-2">Attended 0 Events</span>
+                </div>
+
+
             </div>
 
         </div>
     </div>
+    <hr class="mt-5">
+    <main>
+        <div class="container">
+            <div class="">
+                <div class="d-flex mt-4">
+
+                    <a href="" class="d-flex text-decoration-none">
+                        <div class="text-decoration-none link-light text-md-center rounded-circle"
+                            style="background: #008294; width:23px">1</div>
+                        <span class="ms-2 link-dark">Groups</span>
+                    </a>
+                    <a href="" class="d-flex ms-3 text-decoration-none">
+                        <div class="text-decoration-none link-light text-md-center rounded-circle"
+                            style="background: #008294; width:23px">1</div>
+                        <span class="ms-2 link-dark">Interests</span>
+                    </a>
+                </div>
+                <div class="d-flex justify-content-end" style="margin-top: -32px;">
+                    <a href="edit_profile.php?id=<?php echo $row['user_id']?>">
+                        <button class="btn rounded  link-light" style="background:#f65858;letter-spacing: 0.65px;">Edit
+                            profile</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <hr>
+    <main class="pb-5">
+        <div class="container mt-5">
+            <div>
+
+                <h2 class="fw-bold">Groups</h2>
+                <ul class="list-unstyled d-flex">
+                    <li>
+                        <div class="border rounded p-2">
+                            <a href="" class="d-flex text-decoration-none">
+                                <div class="">
+                                    <img src="image/6.jpg" alt="">
+                                </div>
+                                <h5 class="link-dark fw-bold ms-3 mt-3">Agile Learning Culture Meetup</h5>
+                            </a>
+                        </div>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="mt-5 pt-5">
+
+                <h2 class="fw-bold">Interests</h2>
+                <ul class="list-unstyled d-flex">
+                    <li>
+                    <a href="">
+                        <button class="rounded link-light border-0 fw-bold p-1 ps-2 pe-2" style="font-size:14px;background:#0098ae;letter-spacing: 0.65px;">Entrepreneur Networking</button>
+                    </a>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+        </div>
+    </main>
+    <?php
+            include("template/footer.php")
+        ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>

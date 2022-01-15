@@ -1,6 +1,14 @@
 <?php
 include('config/database.php');
 ?>
+<?php 
+   $email= $_GET['id'];
+   $sql = "SELECT * FROM `tb_member` WHERE email='$email';";
+    $result = mysqli_query($conn,$sql);
+    if(mysqli_num_rows($result)>0){
+    $row = mysqli_fetch_assoc($result);
+    }
+?>
 <?php
 //Trước khi cho người dùng xâm nhập vào bên trong
 //Phải kiểm tra thẻ làm việc
@@ -97,7 +105,7 @@ if(!isset($_SESSION['isLoginOK'])){
                                 <button class="flex-shrink-0 dropdown bg-white border-0">
                                     <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle"
                                         id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <img src="img/Meetup.png" alt="mdo" width="32" height="32"
+                                        <img src="image/<?php echo $row['avatar']?>" alt="mdo" width="32" height="32"
                                             class="rounded-circle">
                                     </a>
                                     <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
@@ -106,7 +114,7 @@ if(!isset($_SESSION['isLoginOK'])){
                                         <li>
                                             <hr class="dropdown-divider">
                                         </li>
-                                        <li><a class="dropdown-item" href="#">My Profile</a></li>
+                                        <li><a class="dropdown-item" href="member.php?id=<?php echo $row['user_id']; ?>">My Profile</a></li>
                                         <li><a class="dropdown-item" href="#">Settings</a></li>
                                         <li><a class="dropdown-item" href="#">Help</a></li>
                                         <li><a class="dropdown-item" href="logout.php">Log out</a></li>

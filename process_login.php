@@ -14,7 +14,7 @@
             die("Kết nối thất bại. Vui lòng kiểm tra lại các thông tin máy chủ");
         }
         // Bước 02: Thực hiện truy vấn
-        $sql = "SELECT * FROM user_login WHERE email = '$email' AND matkhau='$pass'";
+        $sql = "SELECT * FROM tb_member WHERE email = '$email' AND password='$pass'";
         // Ở đây còn có các vấn đề về tính hợp lệ dữ liệu nhập vào FORM
         // Nghiêm trọng: lỗi SQL Injection
 
@@ -22,7 +22,7 @@
         if(mysqli_num_rows($result) > 0){
             // CẤP THẺ LÀM VIỆC
             $_SESSION['isLoginOK'] = $email;
-            header("location:home.php"); //Chuyển hướng về Trang quản trị
+            header("location:home.php?id=$email"); //Chuyển hướng về Trang quản trị
         }else{
             $error = "Bạn nhập thông tin Email hoặc mật khẩu chưa chính xác";
             header("location:trangchu.php?error=$error"); //Chuyển hướng, hiển thị thông báo lỗi

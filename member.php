@@ -66,8 +66,7 @@
                     <li class="nav-item me-3">
                         <div class="btn-group">
                             <div class="dropdown-toggle" data-bs-toggle="dropdown">
-                                <img style="border-radius: 30px;" class="avatar" src="image/<?php echo $row['avatar']?>"
-                                    alt="">
+                                <img style="border-radius: 30px;height: 48px;width: 48px;" class="avatar" src="image/<?php echo $row['avatar']?>" alt="">
                             </div>
                             <ul class="dropdown-menu dropdown-menu-end" style="font-size:13px;letter-spacing: 0.65px;">
                                 <li><button class="dropdown-item" type="button">Your events</button></li>
@@ -76,7 +75,7 @@
                                 <li><button class="dropdown-item" type="button">View profile</button></li>
                                 <li><button class="dropdown-item" type="button">Settings</button></li>
                                 <li><button class="dropdown-item" type="button">Help</button></li>
-                                <li><button class="dropdown-item" type="button">Log out</button></li>
+                                <li><a class="dropdown-item" href="logout.php">Log out</a></li>
                             </ul>
                         </div>
                     </li>
@@ -173,9 +172,11 @@
                 <h2 class="fw-bold">Interests</h2>
                 <ul class="list-unstyled d-flex">
                     <li>
-                    <a href="">
-                        <button class="rounded link-light border-0 fw-bold p-1 ps-2 pe-2" style="font-size:14px;background:#0098ae;letter-spacing: 0.65px;">Entrepreneur Networking</button>
-                    </a>
+                        <a href="">
+                            <button class="rounded link-light border-0 fw-bold p-1 ps-2 pe-2"
+                                style="font-size:14px;background:#0098ae;letter-spacing: 0.65px;">Entrepreneur
+                                Networking</button>
+                        </a>
                     </li>
                     <li></li>
                     <li></li>

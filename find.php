@@ -57,14 +57,10 @@
                                         ?>
                                     </li>
                                     <li class="nav-item">
-                                        <?php
-                                            include("login.php")
-                                        ?>
+                                        <a class="nav-link" href="login.php">Log in</a>
                                     </li>
                                     <li class="nav-item">
-                                        <?php
-                                            include("signup.php")
-                                        ?>
+                                        <a class="nav-link" href="signup.php">Sign up</a>
                                     </li>
                                 </ul>
                             </div>
@@ -88,9 +84,9 @@
             <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                 <p class="lead text-muted mt-3">Suggested Events near New York, NY</p>
                 <div class="container">
-                    <div class="btn-group" >
-                        <button type="button" class="btn btn-light dropdown-toggle" style="border-radius:100px;" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-light dropdown-toggle" style="border-radius:100px;"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             Any day
                         </button>
                         <ul class="dropdown-menu">
@@ -106,8 +102,8 @@
                     </div>
 
                     <div class="btn-group">
-                        <button type="button" class="btn btn-light dropdown-toggle" style="border-radius:100px;" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <button type="button" class="btn btn-light dropdown-toggle" style="border-radius:100px;"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             Any type
                         </button>
                         <ul class="dropdown-menu">
@@ -118,8 +114,8 @@
                     </div>
 
                     <div class="btn-group">
-                        <button type="button" class="btn btn-light dropdown-toggle" style="border-radius:100px;" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <button type="button" class="btn btn-light dropdown-toggle" style="border-radius:100px;"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             Any distance
                         </button>
                         <ul class="dropdown-menu">
@@ -134,8 +130,8 @@
                     </div>
 
                     <div class="btn-group">
-                        <button type="button" class="btn btn-light dropdown-toggle" style="border-radius:100px;" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <button type="button" class="btn btn-light dropdown-toggle" style="border-radius:100px;"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             Any category
                         </button>
                         <ul class="dropdown-menu">
@@ -152,7 +148,8 @@
                     </div>
 
                     <div class="btn-group">
-                        <button type="button" class="btn btn-light dropdown-toggle" style="border-radius:100px; background:#008294; color:#fff;" data-bs-toggle="dropdown"
+                        <button type="button" class="btn btn-light dropdown-toggle"
+                            style="border-radius:100px; background:#008294; color:#fff;" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Sort by: Relevance
                         </button>
@@ -166,31 +163,23 @@
                 <hr class="col-md-7">
 
                 <?php 
-            
-                            //Getting Foods from Database that are active and featured
-                            //SQL Query
                             $sql = "SELECT * FROM tb_event ";
-
-                            //Execute the Query
                             $res = mysqli_query($conn, $sql);
-
-                            //Count Rows
                             $count = mysqli_num_rows($res);
-
-                            //CHeck whether food available or not
                             if($count>0)
                             {
-                                //Food Available
                                 while($row=mysqli_fetch_assoc($res))
                                 {
                         ?>
 
                 <div class="row col-md-12">
-                    <div class="col-md-2" >
-                        <img style="border-radius:8px;" src="image/<?php echo $row['img_name'] ?>" width="200" height="100" alt="">
+                    <div class="col-md-2">
+                        <img style="border-radius:8px;" src="image/<?php echo $row['img_name'] ?>" width="200"
+                            height="100" alt="">
                     </div>
                     <div class="col-md-9 ms-3">
-                        <div class="fw-bold" style="font-size: 18px;color: #877457;"><?php echo $row['thoigian'] ?></div>
+                        <div class="fw-bold" style="font-size: 18px;color: #877457;"><?php echo $row['thoigian'] ?>
+                        </div>
                         <div class="fw-bold mt-1"><?php echo $row['name'] ?></div>
                         <div class="text-muted mt-1"><?php echo $row['content'] ?></div>
                         <div class="mt-4"><?php echo $row['atten'] ?> attendees</div>
@@ -206,14 +195,12 @@
                                 }
                             }
                 ?>
-                
-
             </div>
             <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                 <p class="lead text-muted mt-3">Suggested Groups near New York, NY</p>
                 <div class="btn-group">
-                    <button type="button" class="btn btn-light dropdown-toggle" style="border-radius:100px;" data-bs-toggle="dropdown"
-                        aria-expanded="false">
+                    <button type="button" class="btn btn-light dropdown-toggle" style="border-radius:100px;"
+                        data-bs-toggle="dropdown" aria-expanded="false">
                         Any distance
                     </button>
                     <ul class="dropdown-menu">
@@ -228,8 +215,8 @@
                 </div>
 
                 <div class="btn-group">
-                    <button type="button" class="btn btn-light dropdown-toggle" style="border-radius:100px;" data-bs-toggle="dropdown"
-                        aria-expanded="false">
+                    <button type="button" class="btn btn-light dropdown-toggle" style="border-radius:100px;"
+                        data-bs-toggle="dropdown" aria-expanded="false">
                         Any category
                     </button>
                     <ul class="dropdown-menu">
@@ -246,34 +233,28 @@
                 </div>
                 <hr>
                 <?php 
-            
-                            //Getting Foods from Database that are active and featured
-                            //SQL Query
                             $sql1 = "SELECT * FROM tb_group ";
-
-                            //Execute the Query
                             $res1 = mysqli_query($conn, $sql1);
-
-                            //Count Rows
                             $count1 = mysqli_num_rows($res1);
-
-                            //CHeck whether food available or not
                             if($count1>0)
                             {
-                                //Food Available
                                 while($row=mysqli_fetch_assoc($res1))
                                 {
                         ?>
-                    <div class="row col-md-12">
+                <div class="row col-md-12">
                     <div class="col-md-2">
-                        <img style="border-radius:8px;" src="image/<?php echo $row['img_gr'] ?>" width="200" height="100" alt="">
+                        <img style="border-radius:8px;" src="image/<?php echo $row['img_gr'] ?>" width="200"
+                            height="100" alt="">
                     </div>
                     <div class="col-md-5 ms-3">
-                        
+
                         <div class="fw-bold" style="font-size: 18px;"><?php echo $row['name_gr'] ?></div>
-                        <div class="fw-bold" style="font-size: 16px;color: #877457;"><?php echo $row['location'] ?></div>
+                        <div class="fw-bold" style="font-size: 16px;color: #877457;"><?php echo $row['location'] ?>
+                        </div>
                         <div class="text-muted mt-3"><?php echo $row['content_gr'] ?></div>
-                        <div class="text-muted mt-3"><?php echo $row['members'] ?> members • <?php echo $row['mode'] ?> <i class="bi bi-question-circle-fill"></i></div>
+                        <div class="text-muted mt-3"><?php echo $row['members'] ?> members • <?php echo $row['mode'] ?>
+                            <i class="bi bi-question-circle-fill"></i>
+                        </div>
                         <div class="d-flex justify-content-end">
                             <i class="bi bi-box-arrow-up"></i>
                         </div>

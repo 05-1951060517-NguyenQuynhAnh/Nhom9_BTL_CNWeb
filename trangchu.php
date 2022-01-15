@@ -52,7 +52,7 @@
                                     </li>
                                     <li class="nav-item">
                                         <?php
-                                            include("template/signup.php")
+                                            include("signup.php")
                                         ?>
                                     </li>
                     </ul>

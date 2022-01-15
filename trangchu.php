@@ -1,4 +1,5 @@
-<?php include('config/database.php'); ?>
+<?php include('config/database.php'); 
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -46,7 +47,7 @@
                                     </li>
                                     <li class="nav-item">
                                         <?php
-                                            include("template/login.php")
+                                            include("login.php")
                                         ?>
                                     </li>
                                     <li class="nav-item">

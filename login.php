@@ -1,3 +1,4 @@
+
 <button type="button" class="btn btn-link text-dark text-decoration-none" data-bs-toggle="modal"
     data-bs-target="#exampleModal1">
     Log in
@@ -14,7 +15,7 @@
                         <div class="col-md ">
                             <div id="first">
                                 <div class="myform form">
-                                    <form class="form-signin" width="100">
+                                    <form class="form-signin" width="100" action="process_login.php" method="post">
                                         <div class="text-center">
                                             <img class="mb-4" src="images/logo2.png" alt="" width="52" height="52">
                                             <h1 class="h3 mb-3 mt-0 font-weight-normal">
@@ -23,18 +24,24 @@
                                             <a>Not a member yet?</a> <a class="text-decoration-none"
                                                 href="signup.php">Sign up</a>
                                         </div>
-                                        <label for="inputEmail" class="sr-only">Email
+                                        <label for="inputEmail" class="sr-only" >Email
                                         </label>
-                                        <input type="email" id="inputEmail" class="form-control" required autofocus>
+                                        <input type="email" id="inputEmail" class="form-control"name="txtEmail" required autofocus>
                                         <label for="inputPassword" class="sr-only">Password</label>
-                                        <input type="password" id="inputPassword" class="form-control" required>
+                                        <input type="password" id="inputPassword" class="form-control"name="txtPass" required>
                                         <div class="checkbox mb-3">
                                             <label>
                                                 <input type="checkbox" value="remember-me">
                                                 Keep me signed in
                                             </label>
+                                            <?php
+                                            if(isset($_GET['error'])){
+                                                echo "<h5 style ='color:red'>{$_GET['error']}</h5>";
+                                            }
+                                            ?>
                                         </div>
-                                        <button class="col-md-12 btn btn-lg btn-danger btn-block" type="submit">Log
+                                        <button class="col-md-12 btn btn-lg btn-danger btn-block" type="submit"
+                                            name="btnLogin">Log
                                             in</button>
                                         <hr class="mt-5">
                                         <div class=" justify-content">

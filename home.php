@@ -1,3 +1,14 @@
+<?php
+include('config/database.php');
+?>
+<?php
+//Trước khi cho người dùng xâm nhập vào bên trong
+//Phải kiểm tra thẻ làm việc
+if(!isset($_SESSION['isLoginOK'])){
+    header("location:trangchu.php");
+}
+    
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -98,7 +109,7 @@
                                         <li><a class="dropdown-item" href="#">My Profile</a></li>
                                         <li><a class="dropdown-item" href="#">Settings</a></li>
                                         <li><a class="dropdown-item" href="#">Help</a></li>
-                                        <li><a class="dropdown-item" href="#">Log out</a></li>
+                                        <li><a class="dropdown-item" href="logout.php">Log out</a></li>
                                     </ul>
                                 </button>
                             </ul>
@@ -268,11 +279,31 @@
                     <div class="container">
 
                         <div class="owl-carousel carousel1" style="height:500px;">
+                            <?php 
+            
+                            //Lấy dữ liệu từ cơ sở dữ liệu
+                            //SQL Query
+                            $sql2 = "SELECT * FROM tb_event ";
+
+                            //Thực hiện truy vấn
+                            $res2 = mysqli_query($conn, $sql2);
+
+                            //Count Rows
+                            $count2 = mysqli_num_rows($res2);
+
+                            //Kiểm tra  
+                            if($count2>0)
+                            {
+                                //có 
+                                while($row=mysqli_fetch_assoc($res2))
+                                {
+                        ?>
                             <div class="item">
                                 <div class="col">
                                     <a href="#" class="text-decoration-none">
                                         <div class="card-body pe-2 ps-0">
-                                            <img src="img/3event.webp" style="border-radius: 8px;" alt="">
+                                            <img src="image/<?php echo $row['img_name']; ?>" style="border-radius: 8px;"
+                                                alt="">
                                             <div class="online_event px-2">
                                                 <svg style="color:#757575;" xmlns="http://www.w3.org/2000/svg"
                                                     width="14" height="14" fill="currentColor"
@@ -286,31 +317,29 @@
                                             </div>
                                             <div class="px-2">
 
-                                                <h6 class="mt-3" style="font-size: 14px;color: #877457;">TUE, JAN 4 @
-                                                    6:00
-                                                    PM ICT</h5>
-                                                    <h6 class=" fw-bold link-dark" style="font-size: 17px;">ATELIER
-                                                        GRATUIT
-                                                        1H Passer à l’action vers un job </h6>
-                                                    <p class="text-muted mt-3 mb-4" style="font-size: 13.5px;">Hisse &
-                                                        Haut
-                                                        vers un job à impact 🌏🌱
+                                                <h6 class="mt-3" style="font-size: 14px;color: #877457;">
+                                                    <?php echo $row['thoigian']; ?></h5>
+                                                    <h6 class=" fw-bold link-dark" style="font-size: 17px;">
+                                                        <?php echo $row['name']; ?> </h6>
+                                                    <p class="text-muted mt-3 mb-4" style="font-size: 13.5px;">
+                                                        <?php echo $row['content']; ?>
                                                     </p>
-                                                    <div class="mt-3 d-inline text-muted" style="margin-right:100px;">22
-                                                        attendees
+                                                    <div class=" mt-3 d-inline text-muted" style="margin-right:100px;">
+                                                        <?php echo $row['atten'] ?> attendees
                                                     </div>
-                                                    <div class="d-inline">
+                                                    <div class=" d-inline">
                                                         <button class="border-0 bg-white "><i
                                                                 class="bi bi-box-arrow-up"></i></button>
                                                         <button class="border-0 bg-white"><i
                                                                 class="bi bi-star"></i></button>
                                                     </div>
+
                                             </div>
                                         </div>
                                     </a>
                                 </div>
                             </div>
-                            <div class="item">
+                            <!-- <div class="item">
                                 <div class="col">
                                     <a href="#" class="text-decoration-none">
                                         <div class="card-body pe-2 ps-0">
@@ -350,8 +379,8 @@
                                         </div>
                                     </a>
                                 </div>
-                            </div>
-                            <div class="item">
+                            </div> -->
+                            <!-- <div class="item">
                                 <div class="col">
                                     <a href="#" class="text-decoration-none">
                                         <div class="card-body pe-2 ps-0">
@@ -391,8 +420,8 @@
                                         </div>
                                     </a>
                                 </div>
-                            </div>
-                            <div class="item">
+                            </div> -->
+                            <!-- <div class="item">
                                 <div class="col">
                                     <a href="#" class="text-decoration-none">
                                         <div class="card-body pe-2 ps-0">
@@ -432,8 +461,8 @@
                                         </div>
                                     </a>
                                 </div>
-                            </div>
-                            <div class="item">
+                            </div> -->
+                            <!-- <div class="item">
                                 <div class="col">
                                     <a href="#" class="text-decoration-none">
                                         <div class="card-body pe-2 ps-0">
@@ -473,8 +502,8 @@
                                         </div>
                                     </a>
                                 </div>
-                            </div>
-                            <div class="item">
+                            </div> -->
+                            <!-- <div class="item">
                                 <div class="col">
                                     <a href="#" class="text-decoration-none">
                                         <div class="card-body pe-2 ps-0">
@@ -514,7 +543,12 @@
                                         </div>
                                     </a>
                                 </div>
-                            </div>
+                            </div> -->
+                            <?php
+                            }
+                        }
+                       mysqli_close($conn);
+                    ?>
                             <div class="item">
                                 <div class="col">
                                     <div class="card-body pe-2 ps-0">
@@ -555,7 +589,8 @@
                                         </svg>
                                         <div class="card-content">
                                             <h4 class="card-content-title">Join your first group</h4>
-                                            <p class="card-content-text">As a member, you’ll receive updates each time your
+                                            <p class="card-content-text">As a member, you’ll receive updates each time
+                                                your
                                                 group
                                                 schedules new events.</p>
                                             <a class="btn-card text-center" href="./find_home.php">Join group</a>
@@ -563,6 +598,7 @@
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -570,7 +606,7 @@
         </div>
 
         <!--Stories from Meetup-->
-        <div class="stories bg-white "> 
+        <div class="stories bg-white ">
             <div class="container ">
                 <h2 class="display-7 mb-3 text-center fw-bold">Stories from Meetup</h2>
                 <p class="text-center mt-3 "><a href="card-title" class="">Subscribe to the Community Matters blog

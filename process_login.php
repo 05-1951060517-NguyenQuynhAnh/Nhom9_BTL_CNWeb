@@ -25,12 +25,12 @@
             header("location:home.php?id=$email"); //Chuyển hướng về Trang quản trị
         }else{
             $error = "Bạn nhập thông tin Email hoặc mật khẩu chưa chính xác";
-            header("location:trangchu.php?error=$error"); //Chuyển hướng, hiển thị thông báo lỗi
+            header("location:login.php?error=$error"); //Chuyển hướng, hiển thị thông báo lỗi
         }
 
         // Bước 03: Đóng kết nối
         mysqli_close($conn);
     }else{
-        header("location:trangchu.php");
+        header("location:login.php");
     }
 ?>

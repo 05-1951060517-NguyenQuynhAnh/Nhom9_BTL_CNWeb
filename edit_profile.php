@@ -133,35 +133,35 @@
                                     <ul class="col-md d-block list-unstyled">
                                         <li class="py-2 d-flex border-bottom">
                                             <div class="col-6 col-md-2"><span class="fw-bold">Name:</span></div>
-                                            <div class="col-sm-6 col-md-10"><span class="ms-5">dđ<a href="" class="">edit</a></span></div>
+                                            <div class="col-sm-6 col-md-10"><span class="ms-5 "><?php echo $row['name']?><a href="" class="ms-1">edit</a></span></div>
                                         </li>
                                         <li class="py-2 d-flex border-bottom">
                                             <div class="col-6 col-md-2"><span class="fw-bold">User ID:</span></div>
-                                            <div class="col-sm-6 col-md-10"><span class="ms-5">dđ<a href="" class="">edit</a></span></div>
+                                            <div class="col-sm-6 col-md-10"><span class="ms-5 "><?php echo $row['user_id']?><a href="" class="ms-1">edit</a></span></div>
                                         </li>
                                         <li class="py-2 d-flex border-bottom">
                                             <div class="col-6 col-md-2"><span class="text-nowrap fw-bold">Email address:</span></div>
-                                            <div class="col-sm-6 col-md-10"><span class="ms-5">dđ<a href="" class="">edit</a></span></div>
+                                            <div class="col-sm-6 col-md-10"><span class="ms-5 "><?php echo $row['email']?><a href="" class="ms-1">edit</a></span></div>
                                         </li>
                                         <li class="py-2 d-flex border-bottom">
                                             <div class="col-6 col-md-2"><span class="fw-bold">Password:</span></div>
-                                            <div class="col-sm-6 col-md-10"><span class="ms-5">dđ<a href="" class="">edit</a></span></div>
+                                            <div class="col-sm-6 col-md-10"><span class="ms-5 "><a href="" class="ms-1">edit</a></span></div>
                                         </li>
                                         <li class="py-2 d-flex border-bottom">
                                             <div class="col-6 col-md-2"><span class="fw-bold">Language:</span></div>
-                                            <div class="col-sm-6 col-md-10"><span class="ms-5">dđ<a href="" class="">edit</a></span></div>
+                                            <div class="col-sm-6 col-md-10"><span class="ms-5 "><?php echo $row['language']?><a href="" class="ms-1">edit</a></span></div>
                                         </li>
                                         <li class="py-2 d-flex border-bottom">
                                             <div class="col-6 col-md-2"><span class="fw-bold">Birthday:</span></div>
-                                            <div class="col-sm-6 col-md-10"><span class="ms-5">dđ<a href="" class="">edit</a></span></div>
+                                            <div class="col-sm-6 col-md-10"><span class="ms-5 "><?php echo $row['birthday']?><a href="" class="ms-1">edit</a></span></div>
                                         </li>
                                         <li class="py-2 d-flex border-bottom">
                                             <div class="col-6 col-md-2"><span class="fw-bold">Gender:</span></div>
-                                            <div class="col-sm-6 col-md-10"><span class="ms-5">dđ<a href="" class="">edit</a></span></div>
+                                            <div class="col-sm-6 col-md-10"><span class="ms-5 "><?php echo $row['gender']?><a href="" class="ms-1">edit</a></span></div>
                                         </li>
                                         <li class="py-2 d-flex">
                                             <div class="col-6 col-md-2"><span class="fw-bold">Hometown:</span></div>
-                                            <div class="col-sm-6 col-md-10"><span class="ms-5">dđ<a href="" class="">edit</a></span></div>
+                                            <div class="col-sm-6 col-md-10"><span class="ms-5"><?php echo $row['hometown']?><a href="" class="ms-1">edit</a></span></div>
                                         </li>
                                     </ul>
                                 </div>

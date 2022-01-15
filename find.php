@@ -58,12 +58,12 @@
                                     </li>
                                     <li class="nav-item">
                                         <?php
-                                            include("template/login.php")
+                                            include("login.php")
                                         ?>
                                     </li>
                                     <li class="nav-item">
                                         <?php
-                                            include("template/signup.php")
+                                            include("signup.php")
                                         ?>
                                     </li>
                                 </ul>

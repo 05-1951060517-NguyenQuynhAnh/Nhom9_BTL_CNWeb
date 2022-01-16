@@ -63,7 +63,7 @@
                                 <li><button class="dropdown-item" type="button">View profile</button></li>
                                 <li><button class="dropdown-item" type="button">Settings</button></li>
                                 <li><button class="dropdown-item" type="button">Help</button></li>
-                                <li><a class="dropdown-item" href="logout.php">Log out</a></li>
+                                <li><a class="dropdown-item" href="../logout.php">Log out</a></li>
                             </ul>
                         </div>
                     </li>

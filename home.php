@@ -154,7 +154,7 @@ if(!isset($_SESSION['isLoginOK'])){
                         <div class="card-content">
                             <h4 class="card-content-title">Find your first event</h4>
                             <p class="card-content-text">Events are happening 24/7. What do you want to do?</p>
-                            <a class="btn-card" href="./find.php">Discover Events</a>
+                            <a class="btn-card text-nowrap" href="./find.php">Discover Events</a>
                         </div>
                     </div>
                     <div class="card-item">

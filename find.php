@@ -53,7 +53,7 @@
                                     </li>
                                     <li class="nav-item">
                                         <?php
-                                            include("template/languege.php")
+                                            include("template/language.php")
                                         ?>
                                     </li>
                                     <li class="nav-item">
@@ -165,7 +165,7 @@
                 <?php 
                             $search =$_POST['txtsearch'];
                             $location=$_POST['txtlocation'];
-                            $sql = "SELECT * FROM `tb_event` WHERE name like '%$search%' or content like '%$search%'";
+                            $sql = "SELECT * FROM `tb_event` WHERE name like '%$search%' and location like '%$location%'or content like '%$search%' ";
                             $res = mysqli_query($conn, $sql);
                             $count = mysqli_num_rows($res);
                             if($count>0)
@@ -183,7 +183,7 @@
                         <div class="fw-bold" style="font-size: 18px;color: #877457;"><?php echo $row['thoigian'] ?>
                         </div>
                         <div class="fw-bold mt-1"><?php echo $row['name'] ?></div>
-                        <div class="text-muted mt-1"><?php echo $row['content'] ?></div>
+                        <div class="text-muted mt-1"><?php echo $row['content'] ?> • <?php echo $row['location'] ?></div>
                         <div class="mt-4"><?php echo $row['atten'] ?> attendees</div>
                         <div class="col-md-6 d-flex justify-content-end">
                             <i class="bi bi-box-arrow-up"></i>

@@ -40,8 +40,8 @@
             </svg>
             <div class="h-right collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
-                    <li class="nav-item">
-                    <?php include('template/languege.php'); ?>
+                    <li class="nav-item mt-2">
+                    <?php include('template/language.php'); ?>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-dark" href="login.php">Log in</a>
@@ -126,33 +126,33 @@
                 <button class="items">Home your craft</button>
             </div>
             <!-- Phần tìm kiếm ---------------------------------------------------------------------------------------->
-            <div class="d-flex row mt-5 px-1">
-                <form class="form_search col-md-6"action="find.php"method="post">
-                    <div class="">
-                        <div class="row pe-4">
-                            <h3 class="mt-5 mb-4 p-0" style="font-weight:800;letter-spacing: -0.75px;word-spacing:-2px;">
-                                What do you want to do?</h3>
-                            <div class="location col p-0 me-2 ">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-search" viewBox="0 0 16 16">
-                                    <path
-                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                                </svg>
-                                <input class="text_search"  name="txtsearch" type="text" placeholder="Search for tennis" aria-label="Search">
-                            </div>
-                            <div class="location col p-0 ">
-    
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="18" fill="currentColor"
-                                    class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
-                                </svg>
-                                <input class="text_search" type="text" name="txtlocation" placeholder="Location" aria-label="Search">
-                            </div>
-                            <button class="search mt-4 p-2">Search</button>
-                        </div>
-                    </div>
-                </form>
+            <div class="row mt-5 px-1">
+              <form class="form_search col-md-6"action="find.php"method="post">
+                  <div class="">
+                      <div class="row pe-4">
+                          <h3 class="mt-5 mb-4 p-0" style="font-weight:800;letter-spacing: -0.75px;word-spacing:-2px;">
+                              What do you want to do?</h3>
+                          <div class="location col p-0 me-2 ">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                  class="bi bi-search" viewBox="0 0 16 16">
+                                  <path
+                                      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                              </svg>
+                              <input class="text_search" type="text" placeholder="Search for tennis"name="txtsearch" aria-label="Search">
+                          </div>
+                          <div class="location col p-0 ">
+  
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="18" fill="currentColor"
+                                  class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                  <path
+                                      d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                              </svg>
+                              <input class="text_search" type="text" name="txtlocation"placeholder="Location" aria-label="Search">
+                          </div>
+                          <button class="search mt-4 p-2">Search</button>
+                      </div>
+                  </div>
+              </form>
                 <div class="col-md pt-5 px-5">
                     <div class="row">
                         <h3 class=" mb-4" style="font-weight:800;letter-spacing: -0.75px;word-spacing:-2px;">See what’s
@@ -207,18 +207,18 @@
             </div>
             <!-- Upcoming online events --------------------------------------------------------------------------------------------------------------->
             <div class="groups">
-                <div class="d-flex mb-4">
+                <div class="d-flex mb-3">
                     <div class="col-md-10">
 
-                        <h3 class="d-inline fw-bold">Upcoming online events</h3>
+                        <h3 class="d-inline" style="font-weight:850">Upcoming online events</h3>
                     </div>
-                    <div class="col-md" style="padding-left:35px ">
+                    <div class="col-md" style="padding-left:20px ">
 
                         <a href="" class="d-inline" style="color: #008294;">Explore more events</a>
                     </div>
                 </div>
                 <div class="container p-0">
-                    <div class="owl-carousel carousel1" style="height:500px;">
+                    <div class="owl-carousel carousel1" style="height:400px;">
                         <?php 
                                 $sql2 = "SELECT * FROM tb_event ORDER BY thoigian DESC LIMIT 8";
                                 $res2 = mysqli_query($conn, $sql2);
@@ -228,7 +228,7 @@
                                     while($row=mysqli_fetch_assoc($res2))
                                     {
                             ?>
-                        <div class="item">
+                        <div class="item" style=" height: 350px;">
                             <div class="col">
                                 <a href="#" class="text-decoration-none">
                                     <div class="card-body pe-3 ps-0">
@@ -279,13 +279,13 @@
                 </div>
             </div>
             <!-- Phần Popular groups ------------------------------------------------------------------------------------------------------------------>
-            <div class="groups" style="margin-bottom:150px; height:300px">
+            <div class="groups mt-4" style="margin-bottom:150px; height:300px">
                 <div class="d-flex mb-4">
                     <div class="col-md-10">
 
-                        <h3 class="d-inline fw-bold">Popular Groups</h3>
+                        <h3 class="d-inline"style="font-weight:850">Popular Groups</h3>
                     </div>
-                    <div class="col-md" style="padding-left:35px ">
+                    <div class="col-md" style="padding-left:20px ">
 
                         <a href="" class="d-inline" style="color: #008294;">Explore more groups</a>
                     </div>
@@ -294,7 +294,7 @@
 
                     <div class="owl-carousel carousel2">
                         <?php 
-                            $sql = "SELECT * FROM tb_group ";
+                            $sql = "SELECT * FROM tb_group ORDER BY members DESC LIMIT 6";
                             $res = mysqli_query($conn, $sql);
                             $count = mysqli_num_rows($res);
                             if($count>0)
@@ -312,7 +312,7 @@
                                                 <img src="image/<?php echo $row['img_gr']?>" alt=""
                                                     style="height:55px ;width:55px; border-radius:7px">
                                             </div>
-                                            <h5 class="mt-1 fw-bold link-dark">
+                                            <h5 class="m-auto ms-0 fw-bold link-dark" >
                                                 <?php echo $row['name_gr']?>
                                             </h5>
                                         </div>
@@ -320,7 +320,7 @@
                                     <a href="" class="text-decoration-none">
                                         <div class="mt-3">
                                             <p class="mb-2"><?php echo $row['time']?></p>
-                                            <h6 class="fw-bold link-dark"><?php echo $row['content_gr']?></h6>
+                                            <h6 class="fw-bold link-dark"><?php echo $row['summary_ct']?></h6>
                                         </div>
                                     </a>
                                 </div>

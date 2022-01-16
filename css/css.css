@@ -252,9 +252,6 @@ html, body{
     outline-offset: 15px;
     text-shadow: 1px 1px 2px #427388; 
   }
-  .item{
-    height: 500px;
-  }
   .avatar_1{
   position: absolute;
   left: 20px;
@@ -293,12 +290,6 @@ html, body{
 }
 .d-flex input:hover{
     border: 1px solid black;
-}
-
-.btn_search{
-    height: 42px;
-    background: #f65858;
-    border-radius: 0px 8px 8px 0px;
 }
 .avatar{
     height: 48px;

@@ -1,4 +1,4 @@
-<?php include('config/database.php'); ?>
+
 <?php 
     $id= $_GET['id'];
    $sql = "SELECT * FROM `tb_member` WHERE user_id='$id';";
@@ -18,8 +18,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
-    <link rel="shortcut icon" href="img/Meetup.png">
-    <link rel="stylesheet" href="css/css.css">
+    <link rel="shortcut icon" href="../img/Meetup.png">
+    <link rel="stylesheet" href="../css/css.css">
 </head>
 
 <body>
@@ -123,75 +123,3 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-md bg-white rounded border">
-                        <div class="profile">
-                            <div class="px-3 pt-3 border-bottom">
-                                <h3 class="fw-bold">General</h3>
-                            </div>
-                            <div class="infor p-3 d-flex">
-                                <div class="unit col-sm-6 col-md-8 d-flex pe-3">
-                                    <ul class="col-md d-block list-unstyled">
-                                        <li class="py-2 d-flex border-bottom">
-                                            <div class="col-6 col-md-2"><span class="fw-bold">Name:</span></div>
-                                            <div class="col-sm-6 col-md-10"><span class="ms-5 "><?php echo $row['name']?><a href="edit_profile/edit_name.php?id=<?php echo $row['user_id']?>" class="ms-1">edit</a></span></div>
-                                        </li>
-                                        <li class="py-2 d-flex border-bottom">
-                                            <div class="col-6 col-md-2"><span class="fw-bold">User ID:</span></div>
-                                            <div class="col-sm-6 col-md-10"><span class="ms-5 "><?php echo $row['user_id']?></span></div>
-                                        </li>
-                                        <li class="py-2 d-flex border-bottom">
-                                            <div class="col-6 col-md-2"><span class="text-nowrap fw-bold">Email address:</span></div>
-                                            <div class="col-sm-6 col-md-10"><span class="ms-5 "><?php echo $row['email']?><a href="edit_profile/edit_email.php?id=<?php echo $row['user_id']?>" class="ms-1">edit</a></span></div>
-                                        </li>
-                                        <li class="py-2 d-flex border-bottom">
-                                            <div class="col-6 col-md-2"><span class="fw-bold">Password:</span></div>
-                                            <div class="col-sm-6 col-md-10"><span class="ms-5 "><?php echo $row['password']?><a href="edit_profile/edit_email.php?id=<?php echo $row['user_id']?>" class="ms-1">edit</a></span></div>
-                                        </li>
-                                        <li class="py-2 d-flex border-bottom">
-                                            <div class="col-6 col-md-2"><span class="fw-bold">Location:</span></div>
-                                            <div class="col-sm-6 col-md-10"><span class="ms-5 "><?php echo $row['location']?><a href="edit_profile/edit_location.php?id=<?php echo $row['user_id']?>" class="ms-1">edit</a></span></div>
-                                        </li>
-                                        <li class="py-2 d-flex border-bottom">
-                                            <div class="col-6 col-md-2"><span class="fw-bold">Language:</span></div>
-                                            <div class="col-sm-6 col-md-10"><span class="ms-5 "><?php echo $row['language']?><a href="edit_profile/edit_languge.php?id=<?php echo $row['user_id']?>" class="ms-1">edit</a></span></div>
-                                        </li>
-                                        <li class="py-2 d-flex border-bottom">
-                                            <div class="col-6 col-md-2"><span class="fw-bold">Birthday:</span></div>
-                                            <div class="col-sm-6 col-md-10"><span class="ms-5 "><?php echo $row['birthday']?><a href="edit_profile/edit_birth.php?id=<?php echo $row['user_id']?>" class="ms-1">edit</a></span></div>
-                                        </li>
-                                        <li class="py-2 d-flex border-bottom">
-                                            <div class="col-6 col-md-2"><span class="fw-bold">Gender:</span></div>
-                                            <div class="col-sm-6 col-md-10"><span class="ms-5 "><?php echo $row['gender']?><a href="edit_profile/edit_birth.php?id=<?php echo $row['user_id']?>" class="ms-1">edit</a></span></div>
-                                        </li>
-                                        <li class="py-2 d-flex">
-                                            <div class="col-6 col-md-2"><span class="fw-bold">Hometown:</span></div>
-                                            <div class="col-sm-6 col-md-10"><span class="ms-5"><?php echo $row['hometown']?><a href="edit_profile/edit_location.php?id=<?php echo $row['user_id']?>" class="ms-1">edit</a></span></div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-6 col-md-4 unit lastUnit">
-                                    <div>
-                                        <div class="col-md"><img class="img-fluid"src="image/<?php echo $row['avatar']?>" alt=""></div>
-                                        <div style="font-size:13px"class="photos mt-3 d-flex justify-content-center">
-                                            <a  href="">Change your photo</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-        </main>
-    </div>
-    <?php
-include('template/footer.php');
-?>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
-</body>
-
-</html>

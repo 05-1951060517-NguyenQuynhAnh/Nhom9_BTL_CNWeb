@@ -33,7 +33,7 @@
                     </div>
                     <!-- <input style="width:300px" type="email" class="form-control" name="txtcountry"> -->
                     <label style="font-size:13px" class="fw-bold mt-3" for="txtname">Hometown</label>
-                    <input style="width:300px" type="text" class="form-control" name="txthometown"value=" <?php echo $row['hometown];?>">
+                    <input style="width:300px" type="text" class="form-control" name="txthometown"value=" <?php echo $row['hometown'];?>">
                     <button type="submit" name="btnsua" style="background: #ed1c40;"
                         class="link-light fw-bold btn mt-3 px-3">Submit</button>
                     <button type="submit" name="" class="ms-3 bg-white border fw-bold btn mt-3 px-3">Cancel</button>

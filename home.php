@@ -1,6 +1,14 @@
 <?php
 include('config/database.php');
 ?>
+
+<?php
+//Trước khi cho người dùng xâm nhập vào bên trong
+//Phải kiểm tra thẻ làm việc
+if(!isset($_SESSION['isLoginOK'])){
+    header("location:login.php");
+}
+?>
 <?php 
    $email= $_GET['id'];
    $sql = "SELECT * FROM `tb_member` WHERE email='$email';";
@@ -8,14 +16,6 @@ include('config/database.php');
     if(mysqli_num_rows($result)>0){
     $row = mysqli_fetch_assoc($result);
     }
-?>
-<?php
-//Trước khi cho người dùng xâm nhập vào bên trong
-//Phải kiểm tra thẻ làm việc
-if(!isset($_SESSION['isLoginOK'])){
-    header("location:login.php");
-}
-    
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -135,7 +135,7 @@ if(!isset($_SESSION['isLoginOK'])){
                 <div class="col-md-12 text-center mb-5 mt-5">
                     <img src="img/welcomeBike.svg" alt="" class="img-fluid rounded">
                     <div class="mt-3">
-                        <h1>Welcome to Meetup</h1>
+                        <h1>Welcome to Meetup, <?php echo $row['name']?>!</h1>
                     </div>
                 </div>
                 <div class="card__container">
@@ -224,7 +224,7 @@ if(!isset($_SESSION['isLoginOK'])){
                             <div class="row mt-5 mb-5">
                                 <h3 class="mb-3 fw-bold"> Find your next event:</h3>
                                 <!--find your next event-->
-                                <form action="" class="search-form row mb-3">
+                                <form action="find.php" class="search-form row mb-3" method="post">
                                     <div class="search-event col-md-6 border">
                                         <i class="bi bi-search"></i>
                                         <input class="border-0 mb-3" type="text" name="find" id=""
@@ -237,7 +237,7 @@ if(!isset($_SESSION['isLoginOK'])){
                                     </div>
 
                                 </form>
-                                <form action="" class="search-form row mb-3">
+                                <form action="find.php" class="search-form row mb-3" method="post">
                                     <select class=" search-event col-md-6 border " data-trigger=""
                                         name="choices-single-defaul">
                                         <option placeholder="" value="">Online + In person</option>

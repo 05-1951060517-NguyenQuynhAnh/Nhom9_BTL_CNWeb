@@ -135,7 +135,7 @@ if(!isset($_SESSION['isLoginOK'])){
                 <div class="col-md-12 text-center mb-5 mt-5">
                     <img src="img/welcomeBike.svg" alt="" class="img-fluid rounded">
                     <div class="mt-3">
-                        <h1>Welcome to Meetup, <?php echo $row['name']?>!</h1>
+                        <h1>Welcome to Meetup,<?php echo $row['name']?>!</h1>
                     </div>
                 </div>
                 <div class="card__container">
@@ -618,7 +618,7 @@ if(!isset($_SESSION['isLoginOK'])){
         <div class="stories bg-white ">
             <div class="container ">
                 <h2 class="display-7 mb-3 text-center fw-bold">Stories from Meetup</h2>
-                <p class="text-center mt-3 "><a href="card-title" class="">Subscribe to the Community Matters blog
+                <p class="text-center mt-3 "><a href="join_meetup.php" class="">Subscribe to the Community Matters blog
                     </a>for the latest news from Meetup including community building tips, product updates, event
                     recordings, and more!</p>
                 <div class="row">

@@ -1,4 +1,4 @@
-<button type="button" class="pt-0 btn btn-link text-dark bg-white text-decoration-none fw-bold" style="font-size:14px"data-bs-toggle="modal"
+<button type="button" class="pt-0 btn btn-link text-dark bg-white text-decoration-none text-muted" style="font-size:14px"data-bs-toggle="modal"
     data-bs-target="#exampleModal">
     <i class="bi bi-globe2"></i>
     English

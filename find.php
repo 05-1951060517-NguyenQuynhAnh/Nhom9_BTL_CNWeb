@@ -69,8 +69,8 @@ if(!isset($_SESSION['isLoginOK'])){
                     <div class="container-fluid">
                         <div class="col-md-6 row">
                             <div class="col-md-2">
-                                <a class="navbar-brand" href="#"><img src="images/logo.png" alt="" width="140"
-                                        height="40"></a>
+                                <a class="navbar-brand" href="index.php"><img src="images/logo.png" alt="" width="140"
+                                        height="35"></a>
                             </div>
                             <div class="col-md-8 ms-4">
                                 <div class="input-group mb-3">
@@ -95,7 +95,7 @@ if(!isset($_SESSION['isLoginOK'])){
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="addevent.php">Start a new event</a>
+                                        <a class="nav-link text-dark" href="addevent.php">Start a new event</a>
                                     </li>
                                     <li class="nav-item mt-2">
                                         <?php
@@ -103,10 +103,10 @@ if(!isset($_SESSION['isLoginOK'])){
                                         ?>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="login.php">Log in</a>
+                                        <a class="nav-link text-dark" href="login.php">Log in</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="signup.php">Sign up</a>
+                                        <a class="nav-link text-dark" href="signup.php">Sign up</a>
                                     </li>
                                 </ul>
                             </div>

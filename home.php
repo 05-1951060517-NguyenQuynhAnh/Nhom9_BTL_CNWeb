@@ -154,7 +154,7 @@ if(!isset($_SESSION['isLoginOK'])){
                         <div class="card-content">
                             <h4 class="card-content-title">Find your first event</h4>
                             <p class="card-content-text">Events are happening 24/7. What do you want to do?</p>
-                            <a class="btn-card" href="./find_home.php">Discover Events</a>
+                            <a class="btn-card" href="./find.php">Discover Events</a>
                         </div>
                     </div>
                     <div class="card-item">
@@ -196,7 +196,7 @@ if(!isset($_SESSION['isLoginOK'])){
                             <h4 class="card-content-title">Join your first group</h4>
                             <p class="card-content-text">As a member, you’ll receive updates each time your group
                                 schedules new events.</p>
-                            <a class="btn-card text-center" href="./find_home.php">Join group</a>
+                            <a class="btn-card text-center" href="./find.php">Join group</a>
                         </div>
                     </div>
                 </div>
@@ -215,12 +215,12 @@ if(!isset($_SESSION['isLoginOK'])){
                                 <form action="find.php" class="search-form row mb-3" method="post">
                                     <div class="search-event col-md-6 border">
                                         <i class="bi bi-search"></i>
-                                        <input class="border-0 mb-3" type="text" name="find" id=""
+                                        <input class="border-0 mb-3" type="text" name="txtsearch" id=""
                                             placeholder="Find your next event">
                                     </div>
                                     <div class="search-event col-md-6 border">
                                         <i class="bi bi-geo-alt-fill"></i>
-                                        <input class="border-0 mb-3" type="text" name="location" id=""
+                                        <input class="border-0 mb-3" type="text" name="txtlocation" id=""
                                             placeholder="Locaton">
                                     </div>
 

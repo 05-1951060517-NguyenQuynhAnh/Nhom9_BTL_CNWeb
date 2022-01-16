@@ -165,7 +165,7 @@
                 <?php 
                             $search =$_POST['txtsearch'];
                             $location=$_POST['txtlocation'];
-                            $sql = "SELECT * FROM `tb_event` WHERE name like '%$search%' or content like '%$search%'";
+                            $sql = "SELECT * FROM `tb_event` WHERE name like '%$search%' and location like '%$location%'or content like '%$search%' ";
                             $res = mysqli_query($conn, $sql);
                             $count = mysqli_num_rows($res);
                             if($count>0)

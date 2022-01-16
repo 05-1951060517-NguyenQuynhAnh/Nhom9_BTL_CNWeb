@@ -238,7 +238,7 @@
                 </div>
                 <hr>
                 <?php 
-                            $sql1 = "SELECT * FROM tb_group ";
+                            $sql1 = "SELECT * FROM tb_group WHERE name_gr like '%$search%' and location like '%$location%'or content_gr like '%$search%' ";
                             $res1 = mysqli_query($conn, $sql1);
                             $count1 = mysqli_num_rows($res1);
                             if($count1>0)

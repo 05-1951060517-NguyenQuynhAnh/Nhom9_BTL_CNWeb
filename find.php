@@ -49,9 +49,9 @@
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Start a new group</a>
+                                        <a class="nav-link" href="addevent.php">Start a new event</a>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="nav-item mt-2">
                                         <?php
                                             include("template/language.php")
                                         ?>
@@ -197,7 +197,15 @@
                                 }
                             }
                             else{
-                                echo "<h5>Sorry, there are no event results for $search near you.</h5>";
+                                ?>
+                                <div class="text-center mt-5">
+                                    <img src="image/no.png" alt="">
+                                </div>
+                                
+                                <div class="text-center">
+                                <?php
+                                echo "<h5 >Sorry, there are no event results for $search near you.</h5>"; ?></div>
+                                <?php
                             }
                 ?>
             </div>

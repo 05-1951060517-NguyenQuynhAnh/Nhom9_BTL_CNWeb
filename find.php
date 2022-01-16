@@ -51,7 +51,7 @@
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">Start a new group</a>
                                     </li>
-                                    <li class="nav-item mt-2">
+                                    <li class="nav-item">
                                         <?php
                                             include("template/language.php")
                                         ?>
@@ -197,9 +197,6 @@
                                 }
                             }
                             else{
-                                ?>
-                                <img src="image/no.png" alt="">
-                                <?php
                                 echo "<h5>Sorry, there are no event results for $search near you.</h5>";
                             }
                 ?>

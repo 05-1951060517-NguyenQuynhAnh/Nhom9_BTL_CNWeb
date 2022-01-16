@@ -1,7 +1,7 @@
 
 <?php 
     $id= $_GET['id'];
-   $sql = "SELECT * FROM `tb_member` WHERE user_id='$id';";
+    $sql = "SELECT * FROM `tb_member` WHERE user_id='$id';";
     $result = mysqli_query($conn,$sql);
     if(mysqli_num_rows($result)>0){
     $row = mysqli_fetch_assoc($result);
@@ -53,7 +53,7 @@
                         <div class="btn-group">
                             <div class="dropdown-toggle" data-bs-toggle="dropdown">
                                 <img style="border-radius: 30px;height: 32px;width: 32px;" class="avatar"
-                                    src="image/<?php echo $row['avatar']?>" alt="">
+                                    src="../image/<?php echo $row['avatar']?>" alt="">
                             </div>
                             <ul class="dropdown-menu dropdown-menu-end" style="font-size:13px;letter-spacing: 0.65px;">
                                 <li><button class="dropdown-item" type="button">Your events</button></li>

@@ -51,9 +51,9 @@
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">Start a new group</a>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="nav-item mt-2">
                                         <?php
-                                            include("template/languege.php")
+                                            include("template/language.php")
                                         ?>
                                     </li>
                                     <li class="nav-item">
@@ -183,7 +183,7 @@
                         <div class="fw-bold" style="font-size: 18px;color: #877457;"><?php echo $row['thoigian'] ?>
                         </div>
                         <div class="fw-bold mt-1"><?php echo $row['name'] ?></div>
-                        <div class="text-muted mt-1"><?php echo $row['content'] ?></div>
+                        <div class="text-muted mt-1"><?php echo $row['content'] ?> • <?php echo $row['location'] ?></div>
                         <div class="mt-4"><?php echo $row['atten'] ?> attendees</div>
                         <div class="col-md-6 d-flex justify-content-end">
                             <i class="bi bi-box-arrow-up"></i>
@@ -197,6 +197,9 @@
                                 }
                             }
                             else{
+                                ?>
+                                <img src="image/no.png" alt="">
+                                <?php
                                 echo "<h5>Sorry, there are no event results for $search near you.</h5>";
                             }
                 ?>

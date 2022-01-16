@@ -224,8 +224,8 @@ if(!isset($_SESSION['isLoginOK'])){
                                             placeholder="Locaton">
                                     </div>
 
-                                </form>
-                                <form action="find.php" class="search-form row mb-3" method="post">
+                                <div class="d-flex p-0 mt-3">
+
                                     <select class=" search-event col-md-6 border " data-trigger=""
                                         name="choices-single-defaul">
                                         <option placeholder="" value="">Online + In person</option>
@@ -236,7 +236,8 @@ if(!isset($_SESSION['isLoginOK'])){
                                     <div class="search-event col-md-6 border">
                                         <input class="border-0 mb-3 " type="date" id="birthday" name="birthday"></input>
                                     </div>
-                                    <button class="btnsearch mb-3">Search</button>
+                                </div>
+                                <button class="search mt-4 p-2">Search</button>
                                 </form>
                             </div>
                         </div>

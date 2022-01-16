@@ -36,7 +36,7 @@
                     placeholder="Search for keywords">
                 <input type="text" class="form-control" id="txtlocation" name="txtlocation"
                     placeholder="Search for keywords" value="<?php echo $row['location']?>">
-                <button class="btn_search" type="button">
+                <button style="height: 42px;background: #f65858;border-radius: 0px 8px 8px 0px;"type="button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         style="color: white;" class="bi bi-search" viewBox="0 0 16 16">
                         <path

@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th1 15, 2022 lúc 02:59 PM
--- Phiên bản máy phục vụ: 10.4.22-MariaDB
--- Phiên bản PHP: 8.0.13
+-- Thời gian đã tạo: Th1 16, 2022 lúc 05:38 AM
+-- Phiên bản máy phục vụ: 10.4.21-MariaDB
+-- Phiên bản PHP: 8.0.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -68,25 +68,26 @@ CREATE TABLE `tb_group` (
   `content_gr` varchar(500) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `members` int(11) NOT NULL,
   `mode` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `img_gr` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+  `img_gr` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `summary_ct` varchar(500) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Đang đổ dữ liệu cho bảng `tb_group`
 --
 
-INSERT INTO `tb_group` (`id_gr`, `name_gr`, `time`, `location`, `content_gr`, `members`, `mode`, `img_gr`) VALUES
-(6, 'New York History and Culture - Experience NY and the World', 'Sat, Jan 15 @ 3:00 AM 2022', 'NEW YORK, NY', 'New York History & Culture - Experience New York City and the World! NY History & Culture: Art, Architecture, Books, Dance...', 1808, 'Public', '1.jpg'),
-(7, 'Zoom meeting and coffee with other citizens of the world', 'Sun, Jan 16 @ 3:00 AM 2022', 'NEW YORK, NY', NULL, 149, 'Public', '2.jpg'),
-(8, 'Singles Speed Dating', 'Fri, Jan 14 @ 6:00 PM 2022', 'NEW YORK, NY', 'The Speed Dating Meetup is meant for singles who are interested in meeting new people in a structured format. Whether you are', 2546, 'Public', '3.jpg'),
-(9, 'World Virtual Travelers: Archeology, Art ', 'Sat, Jan 15 @ 3:30 AM 2022', 'NEW YORK, NY', 'World Virtual Tours: [https://worldvirtualtours.online/](https://worldvirtualtours.online/) We are a group of', 226, 'Public', '4.jpg'),
-(10, 'Leap - Conversations for Curious Minds', 'Fri, Jan 14 @ 9:00 PM 2022', 'NEW YORK, NY', NULL, 255, 'Public', '5.jpg'),
-(11, 'Academic Writing Group', NULL, 'NEW YORK, NY', NULL, 368, 'Private', '8.jpg'),
-(12, 'Brooklyn Speculative Fiction Writers', NULL, 'BROOKLYN, NY', 'We are a speculative fiction writers group based in Brooklyn. Together, we help one another hone our craft to a more', 165, 'Private', '7.jpg'),
-(13, 'New Jersey Divas Who Rock', NULL, 'BLOOMFIELD, NJ', NULL, 179, 'Private', '10.jpg'),
-(14, 'Bright and Beautiful Ladies in NY (30’s to 50\'s)', NULL, 'NEW YORK, NY', 'Ladies! We are adventurous, imaginative, enthusiastic women in their 30’s to 50\'s who are insatiably curious about the people and...', 167, 'Public', '6.jpg'),
-(15, 'Past Lives, Dreams, Soul Travel throughout New York', NULL, 'NEW YORK, NY', 'Open to all those looking to find more wisdom, love, inner peace and spiritual freedom in their lives, through better understanding', 2034, 'Public', '11.jpg'),
-(16, '\r\nGenuine Friends 50-70+ Long Island Ladies Group', NULL, 'GARDEN CITY, NY', '**WE ARE CLOSED TO NEW MEMBERS UNTIL MAY 2022** **Please be vaccinated to protect us all.**  **We plan a variety of fun events...', 122, 'Private', '12.jpg');
+INSERT INTO `tb_group` (`id_gr`, `name_gr`, `time`, `location`, `content_gr`, `members`, `mode`, `img_gr`, `summary_ct`) VALUES
+(6, 'New York History & Culture-Experience NY ', 'Sat, Jan 15 @ 3:00 AM 2022', 'NEW YORK, NY', 'New York History & Culture - Experience New York City and the World! NY History & Culture: Art, Architecture, Books, Dance...', 1808, 'Public', '1.jpg', 'Picasso In Barcelona, Spain and the Picasso Museum - Livestream Tour'),
+(7, 'Zoom meeting and coffee with other citizens of the world', 'Sun, Jan 16 @ 3:00 AM 2022', 'NEW YORK, NY', NULL, 149, 'Public', '2.jpg', 'Zoom meeting and coffee with other citizens of the world '),
+(8, 'Singles Speed Dating', 'Fri, Jan 14 @ 6:00 PM 2022', 'NEW YORK, NY', 'The Speed Dating Meetup is meant for singles who are interested in meeting new people in a structured format. Whether you are', 2546, 'Public', '3.jpg', 'Digital Nomad Date Night (Global) | Video Speed Dating'),
+(9, 'World Virtual Travelers: Archeology, Art ', 'Sat, Jan 15 @ 3:30 AM 2022', 'NEW YORK, NY', 'World Virtual Tours: [https://worldvirtualtours.online/](https://worldvirtualtours.online/) We are a group of', 226, 'Public', '4.jpg', 'FREE - NILE CRUISE Episode 3: Edfu and Kom Ombo. Ancient Egypt Virtual Tour'),
+(10, 'Leap - Conversations for Curious Minds', 'Fri, Jan 14 @ 9:00 PM 2022', 'NEW YORK, NY', NULL, 255, 'Public', '5.jpg', 'Good in the News Today'),
+(11, 'Academic Writing Group', 'Mon, Jan 17 @ 5:00 AM 2022', 'NEW YORK, NY', NULL, 368, 'Private', '8.jpg', 'Sunday Mid-Morning Writing Session (Online) 10:00am to 1:00pm'),
+(12, 'Brooklyn Speculative Fiction Writers', 'Fri, Jan 21 @ 3:00 AM 2022', 'BROOKLYN, NY', 'We are a speculative fiction writers group based in Brooklyn. Together, we help one another hone our craft to a more', 165, 'Private', '7.jpg', 'Rooftop Reading Series at Ample Hills in Gowanus, Brooklyn'),
+(13, 'New Jersey Divas Who Rock', 'Tue, Jan 25 @ 3:00 AM 2022', 'BLOOMFIELD, NJ', NULL, 179, 'Private', '10.jpg', 'Snow Tubing at Mountain Creek  ❄⛄❄ followed by Dinner at Wings Asian Bistro!!! '),
+(14, 'Bright and Beautiful Ladies in NY (30’s to 50\'s)', 'Sun, Jan 9 @ 3:00 AM 2022', 'NEW YORK, NY', 'Ladies! We are adventurous, imaginative, enthusiastic women in their 30’s to 50\'s who are insatiably curious about the people and...', 167, 'Public', '6.jpg', 'Dinner at Le Crocodile in Williamsburg '),
+(15, 'Past Lives, Soul Travel throughout New York', 'Mon, Jan 4 @ 6:00 PM 2022', 'NEW YORK, NY', 'Open to all those looking to find more wisdom, love, inner peace and spiritual freedom in their lives, through better understanding', 2034, 'Public', '11.jpg', 'Online ECK Soul Adventure Seminar—Secrets of Divine Creativity   '),
+(16, '\r\nGenuine Friends 50-70+ Long Island Ladies Group', 'Fri, Jan 7 @ 3:00 AM 2022', 'GARDEN CITY, NY', '**WE ARE CLOSED TO NEW MEMBERS UNTIL MAY 2022** **Please be vaccinated to protect us all.**  **We plan a variety of fun events...', 122, 'Private', '12.jpg', '45 & Over Singles Mixer');
 
 -- --------------------------------------------------------
 

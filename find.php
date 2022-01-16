@@ -1,4 +1,11 @@
 <?php include('config/database.php'); ?>
+<?php
+//Trước khi cho người dùng xâm nhập vào bên trong
+//Phải kiểm tra thẻ làm việc
+if(!isset($_SESSION['isLoginOK'])){
+    header("location:login.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 

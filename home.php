@@ -24,7 +24,7 @@ if(!isset($_SESSION['isLoginOK'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>meetup</title>
+    <title>Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
@@ -37,6 +37,7 @@ if(!isset($_SESSION['isLoginOK'])){
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" />
+        <link rel="shortcut icon" href="img/Meetup.png">
 </head>
 
 <body>
@@ -108,7 +109,7 @@ if(!isset($_SESSION['isLoginOK'])){
                                         <img src="image/<?php echo $row['avatar']?>" alt="mdo" width="32" height="32"
                                             class="rounded-circle">
                                     </a>
-                                    <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+                                    <ul class="dropdown-menu text-small shadow dropdown-menu-end" aria-labelledby="dropdownUser2">
                                         <li><a class="dropdown-item" href="#">Your events</a></li>
                                         <li><a class="dropdown-item" href="#">Your groups</a></li>
                                         <li>

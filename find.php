@@ -163,7 +163,9 @@
                 <hr class="col-md-7">
 
                 <?php 
-                            $sql = "SELECT * FROM tb_event ";
+                            $search =$_POST['txtsearch'];
+                            $location=$_POST['txtlocation'];
+                            $sql = "SELECT * FROM `tb_event` WHERE name like '%$search%' or content like '%$search%'";
                             $res = mysqli_query($conn, $sql);
                             $count = mysqli_num_rows($res);
                             if($count>0)
@@ -193,6 +195,9 @@
                 </div>
                 <?php
                                 }
+                            }
+                            else{
+                                echo "<h5>Sorry, there are no event results for $search near you.</h5>";
                             }
                 ?>
             </div>

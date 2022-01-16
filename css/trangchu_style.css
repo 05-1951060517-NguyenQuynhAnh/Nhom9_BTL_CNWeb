@@ -47,7 +47,7 @@ html, body{
   .scroll_container{
     white-space: nowrap; 
   }
-  .scroll_container .items{
+  /* .scroll_container .items{
     font-size: 13.5px;
     letter-spacing: 0.5px;
     border: #008294;
@@ -59,7 +59,7 @@ html, body{
   }
   .items:hover{
     background: #0098ae;
-  }
+  } */
   .search{
     border: 1px solid #f65858;
     border-radius: 4px;

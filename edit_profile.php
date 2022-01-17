@@ -167,6 +167,10 @@
                                             <div class="col-6 col-md-2"><span class="fw-bold">Hometown:</span></div>
                                             <div class="col-sm-6 col-md-10"><span class="ms-5"><?php echo $row['hometown']?><a href="edit_profile/edit_location.php?id=<?php echo $row['user_id']?>" class="ms-1">edit</a></span></div>
                                         </li>
+                                        <li class="py-2 d-flex">
+                                            <div class="col-6 col-md-2"><span class="fw-bold">Delete account:</span></div>
+                                            <div class="col-sm-6 col-md-10"><span class="ms-5"><?php echo $row['user_id']?><a href="edit_profile/account.php?id=<?php echo $row['user_id']?>" class="ms-1">edit</a></span></div>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="col-6 col-md-4 unit lastUnit">

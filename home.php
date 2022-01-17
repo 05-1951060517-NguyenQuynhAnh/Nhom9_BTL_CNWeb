@@ -116,7 +116,7 @@ if(!isset($_SESSION['isLoginOK'])){
         </div>
         </div>
     </nav>
-    <main>
+  
         <div class="container-header">
             <!--phần đầu tiên của nội dung-->
             <div class="header">
@@ -201,8 +201,11 @@ if(!isset($_SESSION['isLoginOK'])){
                     </div>
                 </div>
             </div>
-            <!--End header-->
-            <!--Main-->
+        </div>
+        <!--End header-->
+        <!--Main-->
+        <div class="container-fluid bg-white">
+
             <div class="find_checkout ">
                 <div class=" container ">
                     <div class="row mt-5 ">
@@ -224,20 +227,21 @@ if(!isset($_SESSION['isLoginOK'])){
                                             placeholder="Locaton">
                                     </div>
 
-                                <div class="d-flex p-0 mt-3">
+                                    <div class="d-flex p-0 mt-3">
 
-                                    <select class=" search-event col-md-6 border " data-trigger=""
-                                        name="choices-single-defaul">
-                                        <option placeholder="" value="">Online + In person</option>
-                                        <option>Online</option>
-                                        <option>In person</option>
-                                    </select>
+                                        <select class=" search-event col-md-6 border " data-trigger=""
+                                            name="choices-single-defaul">
+                                            <option placeholder="" value="">Online + In person</option>
+                                            <option>Online</option>
+                                            <option>In person</option>
+                                        </select>
 
-                                    <div class="search-event col-md-6 border">
-                                        <input class="border-0 mb-3 " type="date" id="birthday" name="birthday"></input>
+                                        <div class="search-event col-md-6 border">
+                                            <input class="border-0 mb-3 " type="date" id="birthday"
+                                                name="birthday"></input>
+                                        </div>
                                     </div>
-                                </div>
-                                <button class="search mt-4 p-2">Search</button>
+                                    <button class="search mt-4 p-2">Search</button>
                                 </form>
                             </div>
                         </div>
@@ -260,6 +264,7 @@ if(!isset($_SESSION['isLoginOK'])){
                 </div>
             </div>
         </div>
+
         <!--Attend an event strarting soon-->
         <div class="attend_event  bg-white mt-3">
             <div class=" container">
@@ -650,8 +655,6 @@ if(!isset($_SESSION['isLoginOK'])){
                 </div>
             </div>
         </div>
-
-    </main>
     <!--FOOTER-->
     <div class=footer>
         <footer class="text-center text-lg-start bg-dark text-white">

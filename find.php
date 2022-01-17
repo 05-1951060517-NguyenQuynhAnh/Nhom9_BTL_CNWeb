@@ -1,11 +1,4 @@
 <?php include('config/database.php'); ?>
-<?php
-//Trước khi cho người dùng xâm nhập vào bên trong
-//Phải kiểm tra thẻ làm việc
-if(!isset($_SESSION['isLoginOK'])){
-    header("location:login.php");
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,7 +16,7 @@ if(!isset($_SESSION['isLoginOK'])){
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light mb-5" style="background: transparent;">
+    <nav class="border-bottom navbar navbar-expand-lg navbar-light mb-5" style="background: transparent;">
         <div class="container-fluid mt-1">
             <a href="index.php">
                 <svg class="mx-4 mt-1" viewBox="0 0 111 40" xmlns="http://www.w3.org/2000/svg" height="34px">
@@ -65,61 +58,6 @@ if(!isset($_SESSION['isLoginOK'])){
             </div>
         </div>
     </nav>
-    <!-- <header class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <nav class="navbar navbar-expand-lg navbar-light">
-                    <div class="container-fluid">
-                        <div class="col-md-6 row">
-                            <div class="col-md-2">
-                                <a class="navbar-brand" href="index.php"><img src="images/logo.png" alt="" width="140"
-                                        height="35"></a>
-                            </div>
-                            <div class="col-md-8 ms-4">
-                                <div class="input-group mb-3">
-                                    <input type="text" class="form-control" placeholder="Search for keyword"
-                                        aria-label="">
-                                    <input type="text" class="form-control" placeholder="Enter location" aria-label="">
-                                    <button class="btn btn-outline-secondary btn-danger" type="button">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                            fill="currentColor" class="bi bi-search link-light" viewBox="0 0 16 16">
-                                            <path
-                                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                                        </svg>
-                                </div>
-                            </div>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                                    <li class="nav-item">
-                                        <a class="nav-link text-dark" href="addevent.php">Start a new event</a>
-                                    </li>
-                                    <li class="nav-item mt-2">
-                                        <?php
-                                            include("template/language.php")
-                                        ?>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link text-dark" href="login.php">Log in</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link text-dark" href="signup.php">Sign up</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </header> -->
-    <hr class="mt-0">
     <main class="container">
         <nav>
             <div class="nav nav-tabs mx-5" id="nav-tab" role="tablist">
